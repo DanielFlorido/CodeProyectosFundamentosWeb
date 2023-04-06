@@ -1,5 +1,6 @@
 package com.proyecto.model.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -33,7 +34,7 @@ public class Profesor {
     private String nombre;
     @Column(name="apellido")
     private String apellido;
-    @OneToMany
+    @OneToMany(mappedBy = "profesor")
     private List<Semestre> semestres;
     
     public Profesor(String userName, String password, String nombre, String apellido) {
@@ -41,6 +42,10 @@ public class Profesor {
         this.password = password;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.semestres= new ArrayList<>();
+    }
+    public void addSemestre(Semestre semestre){
+        this.semestres.add(semestre);
     }
 
 }

@@ -1,11 +1,6 @@
 package com.proyecto.model.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -18,7 +13,8 @@ import lombok.Setter;
 @Getter @Setter @EqualsAndHashCode
 @NoArgsConstructor @AllArgsConstructor
 public class Nota {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "nota")
     private float nota;
@@ -26,6 +22,9 @@ public class Nota {
     private float porcentaje;
     @Column(name = "descripcion")
     private String descripcion;
+    @ManyToOne
+    @JoinColumn(name = "listaNotas_id")
+    private ListaNotas listaNotas;
     public Nota(float nota, float porcentaje, String descripcion) {
         this.nota = nota;
         this.porcentaje = porcentaje;
