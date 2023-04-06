@@ -25,14 +25,12 @@ public class Clase {
     @JoinColumn(name = "semestre_id")
     private Semestre semestre;
     @ManyToMany(mappedBy = "clases")
-    private List<Estudiante> estudiantes;
-    @OneToMany(mappedBy = "clase")
-    private List<ListaNotas> notasClase;
+    private List<Estudiante> estudiantes=new ArrayList<>();
+    @OneToMany(mappedBy = "clase", cascade = CascadeType.ALL)
+    private List<ListaNotas> notasClase= new ArrayList<>();
     public Clase(Semestre semestre, Asignatura asignatura) {
         this.semestre = semestre;
         this.asignatura=asignatura;
-        this.estudiantes= new ArrayList<>();
-        this.notasClase=new ArrayList<>();
     }
 
     public Clase(Clase clase, List<Estudiante> estudiantes) {
@@ -43,5 +41,6 @@ public class Clase {
 
     public void addEstudiante(Estudiante estudiante){
         this.estudiantes.add(estudiante);
+        estudiante.getClases().add(this);
     }
 }

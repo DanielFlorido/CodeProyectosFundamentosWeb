@@ -184,7 +184,7 @@ public class DataBaseInit implements ApplicationRunner {
 
         for(int i=1;i<=3;i++){
             Clase clase = claseRepository.findById((long)i).get();
-            for(int j=1;j<20*i;j++){
+            for(int j=1*(20*(i-1));j<20*i;j++){
                 try{
                     Estudiante estudiante = estudianteRepository.findById((long)j).orElseThrow(() -> new RuntimeException("Estudiante no encontrado"));
                     clase.addEstudiante(estudiante);
@@ -194,6 +194,22 @@ public class DataBaseInit implements ApplicationRunner {
             }
             claseRepository.save(clase);
         }
-
+        Clase claseaux=claseRepository.findById((long)1).get();
+        for(int i=0; i<claseaux.getEstudiantes().size();i++){
+            listaNotasRepository.save(new ListaNotas(claseaux.getEstudiantes().get(i),claseaux));
+        }
+        //todos sacaron 2 D:
+        for(ListaNotas l: listaNotasRepository.findAll()){
+            l.addNota(new Nota(2,(float)0.25,"parcial",l));
+        }
+        System.out.println("__♥__♥_____♥__♥___ Put This");
+        System.out.println("_♥_____♥_♥_____♥__ Heart");
+        System.out.println("_♥______♥______♥__ On Your");
+        System.out.println("__♥_____/______♥__ Page If");
+        System.out.println("___♥____\\_____♥___ You Had");
+        System.out.println("____♥___/___♥_____ Your Heart");
+        System.out.println("______♥_\\_♥_______ Broken");
+        System.out.println("________♥_________. ");
     }
+
 }

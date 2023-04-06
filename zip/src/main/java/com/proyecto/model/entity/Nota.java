@@ -25,10 +25,11 @@ public class Nota {
     @ManyToOne
     @JoinColumn(name = "listaNotas_id")
     private ListaNotas listaNotas;
-    public Nota(float nota, float porcentaje, String descripcion) {
+    public Nota(float nota, float porcentaje, String descripcion, ListaNotas listaNotas) {
         this.nota = nota;
         this.porcentaje = porcentaje;
         this.descripcion = descripcion;
+        this.listaNotas=listaNotas;
     }
     
 }
