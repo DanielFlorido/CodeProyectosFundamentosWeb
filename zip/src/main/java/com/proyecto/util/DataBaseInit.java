@@ -121,6 +121,10 @@ public class DataBaseInit implements ApplicationRunner {
         claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get()));
         claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get()));
 
+        //agrega clase al profesor 27 de la asignatura 21
+        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)21).get()));
+
+
         estudianteRepository.save(new Estudiante("Ana", "García"));
         estudianteRepository.save(new Estudiante("David", "López"));
         estudianteRepository.save(new Estudiante("Maria", "Perez"));

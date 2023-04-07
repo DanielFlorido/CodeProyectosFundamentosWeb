@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -35,6 +37,7 @@ public class Profesor {
     @Column(name="apellido")
     private String apellido;
     @OneToMany(mappedBy = "profesor")
+    @Fetch(FetchMode.JOIN)
     private List<Semestre> semestres= new ArrayList<>();
     
     public Profesor(String userName, String password, String nombre, String apellido) {

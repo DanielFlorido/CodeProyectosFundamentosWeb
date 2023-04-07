@@ -10,7 +10,10 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-@Entity 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+@Entity
 @Table(name="semestre")
 @Getter @Setter @EqualsAndHashCode
 @NoArgsConstructor @AllArgsConstructor
@@ -23,6 +26,7 @@ public class Semestre {
     @JoinColumn(name = "profesor_id")
     private Profesor profesor;
     @OneToMany(mappedBy = "semestre")
+    @Fetch(FetchMode.JOIN)
     private List<Clase> clases= new ArrayList<>();
     
     public Semestre(String codSemestre, Profesor profesor) {

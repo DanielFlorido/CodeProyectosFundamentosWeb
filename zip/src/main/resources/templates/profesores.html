@@ -32,23 +32,26 @@
 			margin: 0;
 		}
 
-		li {
-			margin-bottom: 10px;
-		}
-
-		a {
-			display: inline-block;
+		button {
+			display: block;
 			padding: 10px 20px;
 			background-color: white;
 			color: #6E8793;
 			border-radius: 5px;
 			text-decoration: none;
 			transition: all 0.3s ease-in-out;
+			margin-bottom: 10px;
+			border: none;
+			cursor: pointer;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			font-weight: bold;
 		}
 
-		a:hover {
+		button:hover {
 			background-color: #B1BFD4;
 			color: white;
+			transform: translateY(-2px);
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 		}
 	</style>
 </head>
@@ -57,5 +60,8 @@
 <h2>Nombre completo:</h2>
 <p th:text="${nombre}"></p>
 <h2>Asignaturas que dicta:</h2>
+<ul>
+	<button th:each="asig : ${asignaturas}" th:text="${asig}" onclick="location.href='otra_pagina.html'"></button>
+</ul>
 </body>
 </html>
