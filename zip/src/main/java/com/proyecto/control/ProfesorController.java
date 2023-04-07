@@ -26,7 +26,7 @@ public class ProfesorController {
 
     @GetMapping("/profesores")
     public String verProfesor(Model model, HttpSession session) {
-        System.out.println("ENTRO");//NO IMPRIME NADAAAAAAAAAAAAAAA
+        System.out.println("ENTRO");//NO IMPRIME NADAAAAAAAAAAAAAAA:((((
         // Recupera el profesor desde la sesión HTTP
         Profesor profesor = (Profesor) session.getAttribute("profesor");
 
