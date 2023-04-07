@@ -1,5 +1,6 @@
 package com.proyecto.model.service;
 
+import com.proyecto.model.entity.Asignatura;
 import com.proyecto.model.entity.Profesor;
 import com.proyecto.model.repository.ProfesorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,8 @@ import java.util.List;
 public class ProfesorService {
     @Autowired
     private ProfesorRepository profesorRepository;
-
+    @Autowired
+    private AsignaturaService asignaturaService;
     public List<Profesor> getProfesores(){
         return (List<Profesor>) profesorRepository.findAll();
     }
@@ -28,5 +30,9 @@ public class ProfesorService {
     }
     public void deleteProfesor(long id){
         profesorRepository.deleteById(id);
+    }
+
+    public List<Asignatura> getAsignaturasProfesor(Profesor profesor){
+        return asignaturaService.getAsignaturasPorProfesor(profesor);
     }
 }

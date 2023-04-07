@@ -17,6 +17,7 @@ import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class ProfesorController {
@@ -28,22 +29,22 @@ public class ProfesorController {
     @GetMapping("/profesores")
     public String verProfesor(Model model, HttpSession session) {
         // Recupera el profesor desde la sesión HTTP
-        Profesor profesor = (Profesor) session.getAttribute("profesor");
-        HashSet<Asignatura> asignaturas = new HashSet<>();
-        ArrayList<String> asignaturasUnicas = new ArrayList<>();
+        Optional<Profesor> optionalProfesor= Optional.ofNullable((Profesor) session.getAttribute("profesor"));
+        if(optionalProfesor.isPresent()) {
+            Profesor profesor = optionalProfesor.get();
+            List<Asignatura> asignaturasProfesor = profesorService.getAsignaturasProfesor(profesor);
+            ArrayList<String> asignaturasUnicas = new ArrayList<>();
 
-        //Este for se encarga de sacar las asignaturas que tiene el profesor en un arraylist
-        for(int i=0;i<profesor.getSemestres().get(0).getClases().size();i++){
-            Asignatura asignatura= profesor.getSemestres().get(0).getClases().get(i).getAsignatura();
-            if(asignaturas.add(asignatura)){
-                asignaturasUnicas.add(asignatura.getNombre()+" "+asignatura.getIdAsignatura());
+            for (Asignatura a : asignaturasProfesor) {
+                asignaturasUnicas.add(a.getIdAsignatura()+" "+a.getNombre());
             }
-        }
 
-        // Agrega el profesor al modelo para que se puedan mostrar en la vista
-        model.addAttribute("nombre", profesor.getNombre()+" "+profesor.getApellido());
-        model.addAttribute("asignaturas",asignaturasUnicas);
-        return "profesores";
+            // Agrega el profesor al modelo para que se puedan mostrar en la vista
+            model.addAttribute("nombre", profesor.getNombre() + " " + profesor.getApellido());
+            model.addAttribute("asignaturas", asignaturasUnicas);
+            return "profesores";
+        }
+        return"redirect:/";
     }
 
 

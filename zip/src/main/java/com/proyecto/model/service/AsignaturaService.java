@@ -2,6 +2,7 @@ package com.proyecto.model.service;
 import java.util.List;
 import java.util.NoSuchElementException;
 import com.proyecto.model.entity.Asignatura;
+import com.proyecto.model.entity.Profesor;
 import com.proyecto.model.repository.AsignaturaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,5 +30,9 @@ public class AsignaturaService {
 
     public void deleteAsignatura(long id){
         asignaturaRepository.deleteById(id);
+    }
+
+    public List<Asignatura> getAsignaturasPorProfesor(Profesor profesor){
+        return asignaturaRepository.buscarAsignaturasPorProfesor(profesor);
     }
 }
