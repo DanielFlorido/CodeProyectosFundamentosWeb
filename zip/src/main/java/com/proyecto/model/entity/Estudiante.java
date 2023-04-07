@@ -25,12 +25,11 @@ public class Estudiante {
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "estudiante_clase",
             joinColumns = @JoinColumn(name = "estudiante_id"),
-            inverseJoinColumns = @JoinColumn(name = "curso_id"))
-    private List<Clase> clases;
+            inverseJoinColumns = @JoinColumn(name = "clase_id"))
+    private List<Clase> clases= new ArrayList<>();
     public Estudiante(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.clases= new ArrayList<>();
     }
     
 }

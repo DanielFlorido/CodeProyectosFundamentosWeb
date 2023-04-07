@@ -23,12 +23,11 @@ public class Semestre {
     @JoinColumn(name = "profesor_id")
     private Profesor profesor;
     @OneToMany(mappedBy = "semestre")
-    private List<Clase> clases;
+    private List<Clase> clases= new ArrayList<>();
     
     public Semestre(String codSemestre, Profesor profesor) {
         this.codSemestre = codSemestre;
         this.profesor = profesor;
-        this.clases= new ArrayList<>();
     }
 
     public void addClase(Clase clase){

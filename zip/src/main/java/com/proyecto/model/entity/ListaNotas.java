@@ -30,11 +30,15 @@ public class ListaNotas {
     @OneToMany(mappedBy = "listaNotas",
             cascade = CascadeType.ALL,
             orphanRemoval = true)
-    private List<Nota> notas;
+    private List<Nota> notas= new ArrayList<>();
     
-    public ListaNotas(float notaFinal, Estudiante estudiante) {
-        this.notaFinal = notaFinal;
+    public ListaNotas(Estudiante estudiante, Clase clase) {
+        this.notaFinal = 0;
         this.estudiante = estudiante;
-        this.notas= new ArrayList<>();
+        this.clase = clase;
+    }
+
+    public void addNota(Nota nota){
+        this.notas.add(nota);
     }
 }

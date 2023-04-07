@@ -35,7 +35,7 @@ public class Profesor {
     @Column(name="apellido")
     private String apellido;
     @OneToMany(mappedBy = "profesor")
-    private List<Semestre> semestres;
+    private List<Semestre> semestres= new ArrayList<>();
     
     public Profesor(String userName, String password, String nombre, String apellido) {
         this.userName = userName;
@@ -45,7 +45,7 @@ public class Profesor {
         this.semestres= new ArrayList<>();
     }
     public void addSemestre(Semestre semestre){
-        this.semestres.add(semestre);
+        this.semestres.add(semestre );
     }
 
 }
