@@ -12,8 +12,6 @@ import java.util.List;
 public class ProfesorService {
     @Autowired
     private ProfesorRepository profesorRepository;
-    @Autowired
-    private AsignaturaService asignaturaService;
     public List<Profesor> getProfesores(){
         return (List<Profesor>) profesorRepository.findAll();
     }
@@ -32,7 +30,5 @@ public class ProfesorService {
         profesorRepository.deleteById(id);
     }
 
-    public List<Asignatura> getAsignaturasProfesor(Profesor profesor){
-        return asignaturaService.getAsignaturasPorProfesor(profesor);
-    }
+
 }

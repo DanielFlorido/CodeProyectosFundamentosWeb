@@ -16,6 +16,6 @@ public interface AsignaturaRepository extends CrudRepository<Asignatura,Long>{
             "JOIN a.clases c " +
             "JOIN c.semestre s " +
             "WHERE s.profesor = :profesor")
-    List<Asignatura> buscarAsignaturasPorProfesor(@Param("profesor") Profesor profesor);
+    List<Asignatura> getAsignaturasPorProfesor(@Param("profesor") Profesor profesor);
 
 }

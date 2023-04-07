@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se agregan aun mas datos de para la base de datos!">
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se modifica la funcion verProfesor para respetar MVC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AsignaturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AsignaturaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AsignaturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AsignaturaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ProfesorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ProfesorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Profesor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Semestre.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Semestre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AsignaturaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AsignaturaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AsignaturaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AsignaturaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/ProfesorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/ProfesorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680826033350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="se modifica la funcion verProfesor para respetar MVC">
+      <created>1680892598864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680892598869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="se agrega el metodo verProfesor en professorController" />
-    <option name="LAST_COMMIT_MESSAGE" value="se agrega el metodo verProfesor en professorController" />
+    <MESSAGE value="se modifica la funcion verProfesor para respetar MVC" />
+    <option name="LAST_COMMIT_MESSAGE" value="se modifica la funcion verProfesor para respetar MVC" />
   </component>
 </project>

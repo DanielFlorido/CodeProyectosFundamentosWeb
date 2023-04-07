@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Informacion del profesor</title>
+	<style>
+		body {
+			background-color: #6E8793;
+			font-family: Arial, sans-serif;
+			color: white;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		button {
+			display: block;
+			padding: 10px 20px;
+			background-color: white;
+			color: #6E8793;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+			margin-bottom: 10px;
+			border: none;
+			cursor: pointer;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			font-weight: bold;
+		}
+
+		button:hover {
+			background-color: #B1BFD4;
+			color: white;
+			transform: translateY(-2px);
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+<h1>Informacion del profesor</h1>
+<h2>Nombre completo:</h2>
+<p th:text="${nombre}"></p>
+<h2>Asignaturas que dicta:</h2>
+<ul>
+	<button th:each="asig : ${asignaturas}" th:text="${asig}" onclick="location.href='otra_pagina.html'"></button>
+</ul>
+</body>
+</html>

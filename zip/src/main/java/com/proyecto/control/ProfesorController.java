@@ -26,28 +26,6 @@ public class ProfesorController {
     ProfesorService profesorService;
 
 
-    @GetMapping("/profesores")
-    public String verProfesor(Model model, HttpSession session) {
-        // Recupera el profesor desde la sesión HTTP
-        Optional<Profesor> optionalProfesor= Optional.ofNullable((Profesor) session.getAttribute("profesor"));
-        if(optionalProfesor.isPresent()) {
-            Profesor profesor = optionalProfesor.get();
-            List<Asignatura> asignaturasProfesor = profesorService.getAsignaturasProfesor(profesor);
-            ArrayList<String> asignaturasUnicas = new ArrayList<>();
-
-            for (Asignatura a : asignaturasProfesor) {
-                asignaturasUnicas.add(a.getIdAsignatura()+" "+a.getNombre());
-            }
-
-            // Agrega el profesor al modelo para que se puedan mostrar en la vista
-            model.addAttribute("nombre", profesor.getNombre() + " " + profesor.getApellido());
-            model.addAttribute("asignaturas", asignaturasUnicas);
-            return "profesores";
-        }
-        return"redirect:/";
-    }
-
-
     @PostMapping("/logIn")
     public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
         List<Profesor> profesores = new ArrayList<Profesor>(profesorService.getProfesores());
@@ -56,7 +34,7 @@ public class ProfesorController {
             Profesor profesor = profesores.get(i);
             if(profesores.get(i).getPassword().equals(password)&&profesores.get(i).getUserName().equals(username)){
                 session.setAttribute("profesor", profesor);
-                return "redirect:/profesores";
+                return "redirect:/"+profesor.getNombre()+"/asignaturas";
             }
             i++;
         }
