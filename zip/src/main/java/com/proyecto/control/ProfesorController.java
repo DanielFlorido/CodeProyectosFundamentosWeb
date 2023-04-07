@@ -26,24 +26,23 @@ public class ProfesorController {
 
     @GetMapping("/profesores")
     public String verProfesor(Model model, HttpSession session) {
-        System.out.println("ENTRO");//NO IMPRIME NADAAAAAAAAAAAAAAA:((((
         // Recupera el profesor desde la sesión HTTP
         Profesor profesor = (Profesor) session.getAttribute("profesor");
 
         // Agrega el profesor al modelo para que se puedan mostrar en la vista
-        model.addAttribute("profesor", profesor);
-
+        model.addAttribute("nombre", profesor.getNombre());
         return "profesores";
     }
 
 
     @PostMapping("/logIn")
-    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password){
+    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
         List<Profesor> profesores = new ArrayList<Profesor>(profesorService.getProfesores());
         int i=0;
         while(i<profesores.size()){
             Profesor profesor = profesores.get(i);
             if(profesores.get(i).getPassword().equals(password)&&profesores.get(i).getUserName().equals(username)){
+                session.setAttribute("profesor", profesor);
                 return "redirect:/profesores";
             }
             i++;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Informacion del profesor</title>
 	<style>
@@ -55,12 +55,7 @@
 <body>
 <h1>Informacion del profesor</h1>
 <h2>Nombre completo:</h2>
-<p th:text="${profesor.nombre}"></p>
+<p th:text="${nombre}"></p>
 <h2>Asignaturas que dicta:</h2>
-<ul>
-	<li th:each="asignatura : ${profesor.asignaturas}">
-		<a th:href="@{'/asignatura/' + ${asignatura.id}}">th:text="${asignatura.nombre}"</a>
-	</li>
-</ul>
 </body>
 </html>
