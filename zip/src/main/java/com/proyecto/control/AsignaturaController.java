@@ -35,7 +35,7 @@ public class AsignaturaController {
                 // Agrega el profesor al modelo para que se puedan mostrar en la vista
                 model.addAttribute("nombre", profesor.getNombre() + " " + profesor.getApellido());
                 model.addAttribute("asignaturas", asignaturasUnicas);
-                return "profesores";
+                return "asignaturas";
             }else{
                 return"redirect:/";
             }

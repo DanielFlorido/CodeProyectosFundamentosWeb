@@ -1,5 +1,6 @@
 package com.proyecto.model.service;
 import com.proyecto.model.entity.Clase;
+import com.proyecto.model.entity.Profesor;
 import com.proyecto.model.repository.ClaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,5 +29,9 @@ public class ClaseService {
 
     public void deleteClase(long id){
         claseRepository.deleteById(id);
+    }
+
+    public List<Clase> getClasesPorProfesor(Profesor profesor){
+        return claseRepository.getClasePorProfesor(profesor);
     }
 }
