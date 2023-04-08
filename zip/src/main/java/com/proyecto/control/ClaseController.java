@@ -16,15 +16,13 @@ import java.util.Optional;
 
 @Controller
 public class ClaseController {
-
     @Autowired
     ClaseService claseService;
 
-    @GetMapping("/clases/{nombreAsignatura}")
-    public String verClases(@PathVariable("nombreAsignatura") String nombreAsignatura,Model model, HttpSession session){
-        System.out.println(nombreAsignatura);
-
-        return "clases";
+    @GetMapping("/clases/{id}")
+    public String verClases(@PathVariable Long id,Model model, HttpSession session){
+        System.out.println(id);
+        return "redirect:/exito.html";
     }
-    
+
 }

@@ -60,8 +60,29 @@
 <h2>Nombre completo:</h2>
 <p th:text="${nombre}"></p>
 <h2>Asignaturas que dicta:</h2>
-<ul>
-	<button th:each="asig : ${asignaturas}" th:text="${asig}" onclick="location.href='clases'"></button>
-</ul>
+<table>
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Nombre</th>
+		<th>Boton</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr th:each="asignatura : ${asignaturas}">
+		<td th:text="${asignatura.id}"></td>
+		<td th:text="${asignatura.nombre}"></td>
+		<td>
+			<a class="btn btn-primary"
+			   th:href="@{/clases/{id}(id=${asignatura.id})}">
+				Detalles
+			</a>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+
+
 </body>
 </html>

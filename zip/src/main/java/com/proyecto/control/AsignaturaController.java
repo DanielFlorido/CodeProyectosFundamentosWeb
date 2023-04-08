@@ -27,14 +27,9 @@ public class AsignaturaController {
             //revisa si el nombre del profesor de la sesion es el mismo que el que recibimos en el url
             if(nombreProfesor.equalsIgnoreCase(profesor.getNombre())) {
                 List<Asignatura> asignaturasProfesor = asignaturaService.getAsignaturasPorProfesor(profesor);
-                ArrayList<String> asignaturasUnicas = new ArrayList<>();
-                //guarda los nombres y la id de la lista de asignaturas
-                for (Asignatura a : asignaturasProfesor) {
-                    asignaturasUnicas.add(a.getIdAsignatura() + " " + a.getNombre());
-                }
                 // Agrega el profesor al modelo para que se puedan mostrar en la vista
                 model.addAttribute("nombre", profesor.getNombre() + " " + profesor.getApellido());
-                model.addAttribute("asignaturas", asignaturasUnicas);
+                model.addAttribute("asignaturas", asignaturasProfesor);
                 return "asignaturas";
             }else{
                 return"redirect:/";
