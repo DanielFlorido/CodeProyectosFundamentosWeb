@@ -16,6 +16,7 @@ import lombok.Setter;
 @Getter @Setter @EqualsAndHashCode
 @NoArgsConstructor @AllArgsConstructor
 public class Clase {
+    private int idClase;
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @ManyToOne
@@ -28,15 +29,17 @@ public class Clase {
     private List<Estudiante> estudiantes=new ArrayList<>();
     @OneToMany(mappedBy = "clase", cascade = CascadeType.ALL)
     private List<ListaNotas> notasClase= new ArrayList<>();
-    public Clase(Semestre semestre, Asignatura asignatura) {
+    public Clase(Semestre semestre, Asignatura asignatura,int idClase) {
         this.semestre = semestre;
         this.asignatura=asignatura;
+        this.idClase=idClase;
     }
 
-    public Clase(Clase clase, List<Estudiante> estudiantes) {
+    public Clase(Clase clase, List<Estudiante> estudiantes,int idClase) {
         this.asignatura = clase.getAsignatura();
         this.semestre = clase.getSemestre();
         this.estudiantes = estudiantes;
+        this.idClase=idClase;
     }
 
     public void addEstudiante(Estudiante estudiante){

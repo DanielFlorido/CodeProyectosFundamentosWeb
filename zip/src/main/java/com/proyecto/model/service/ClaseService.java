@@ -31,7 +31,7 @@ public class ClaseService {
         claseRepository.deleteById(id);
     }
 
-    public List<Clase> getClasesPorProfesor(Profesor profesor){
-        return claseRepository.getClasePorProfesor(profesor);
+    public List<Clase> getClasesPorProfesor(Profesor profesor,long id){
+        return claseRepository.getClasePorProfesor(profesor,id);
     }
 }

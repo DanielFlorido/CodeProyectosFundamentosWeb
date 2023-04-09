@@ -117,12 +117,12 @@ public class DataBaseInit implements ApplicationRunner {
             semestreRepository.save(new Semestre("2023-1",profe));
         }
         //agregar Clase al profesor 27 para mas facilidad :D en concreto da 3 clases de la asignatura 20
-        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get()));
-        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get()));
-        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get()));
+        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get(),1010));
+        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get(),1011));
+        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)20).get(),1012));
 
         //agrega clase al profesor 27 de la asignatura 21
-        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)21).get()));
+        claseRepository.save(new Clase( semestreRepository.findById((long) 27).get(),asignaturaRepository.findById((long)21).get(),1110));
 
 
         estudianteRepository.save(new Estudiante("Ana", "García"));

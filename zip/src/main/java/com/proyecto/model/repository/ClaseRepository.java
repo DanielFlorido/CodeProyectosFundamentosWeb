@@ -21,6 +21,6 @@ public interface ClaseRepository extends CrudRepository<Clase,Long> {
             "JOIN c.asignatura a " +
             "JOIN c.semestre s " +
             "WHERE s.profesor = :profesor " +
-            "AND a = :asignatura ")
-    List<Clase> getClasePorProfesor(@Param("profesor") Profesor profesor);
+            "AND a.id = :asignatur ")
+    List<Clase> getClasePorProfesor(@Param("profesor") Profesor profesor,@Param("asignatur") long id);
 }

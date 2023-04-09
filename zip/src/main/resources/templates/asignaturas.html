@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Informacion del profesor</title>
+	<title>Información del profesor</title>
 	<style>
 		body {
 			background-color: #6E8793;
@@ -32,57 +32,48 @@
 			margin: 0;
 		}
 
-		button {
-			display: block;
-			padding: 10px 20px;
-			background-color: white;
-			color: #6E8793;
-			border-radius: 5px;
+		.btn {
+			display: inline-block;
+			padding: 12px 24px;
+			background-color: #3B5461;
+			color: white;
+			border-radius: 6px;
 			text-decoration: none;
 			transition: all 0.3s ease-in-out;
-			margin-bottom: 10px;
 			border: none;
 			cursor: pointer;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			font-weight: bold;
+			margin-top: 20px;
+			margin-right: 10px;
 		}
 
-		button:hover {
+		.btn:hover {
 			background-color: #B1BFD4;
 			color: white;
 			transform: translateY(-2px);
 			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 		}
+
+		.btn-back {
+			background-color: #8E8E8E;
+		}
 	</style>
 </head>
 <body>
-<h1>Informacion del profesor</h1>
+<h1>Información del profesor</h1>
 <h2>Nombre completo:</h2>
 <p th:text="${nombre}"></p>
 <h2>Asignaturas que dicta:</h2>
-<table>
-	<thead>
-	<tr>
-		<th>ID</th>
-		<th>Nombre</th>
-		<th>Boton</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr th:each="asignatura : ${asignaturas}">
-		<td th:text="${asignatura.id}"></td>
-		<td th:text="${asignatura.nombre}"></td>
-		<td>
-			<a class="btn btn-primary"
-			   th:href="@{/clases/{id}(id=${asignatura.id})}">
-				Detalles
-			</a>
-		</td>
-	</tr>
-	</tbody>
-</table>
-
-
-
+<div>
+	<ul>
+		<li th:each="asignatura : ${asignaturas}">
+			<p>
+				<span th:text="${asignatura.nombre} + ' - ' + ${asignatura.getIdAsignatura()}"></span>
+				<a class="btn" th:href="@{/clases/{id}(id=${asignatura.id})}">Ver clases</a>
+			</p>
+		</li>
+	</ul>
+</div>
 </body>
 </html>
