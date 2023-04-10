@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Mostrar texto con Thymeleaf</title>
+    <title>Información del profesor</title>
+    <style>
+        body {
+            background-color: #6E8793;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3B5461;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #B1BFD4;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-back {
+            background-color: #8E8E8E;
+        }
+    </style>
 </head>
 <body>
-<h1 th:text="${texto}"></h1>
+<div>
+    <ul>
+        <li th:each="clase : ${clas}">
+            <p>
+                <span th:text="${clase}"></span>
+                <a class="btn" th:href="hola"></a>
+            </p>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
 
