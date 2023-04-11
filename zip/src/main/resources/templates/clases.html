@@ -59,7 +59,12 @@
 	<h1>Informacion de la clase</h1>
 	<h2>Clases:</h2>
 	<ul>
-		<button th:each="clase : ${class}" th:text="'Clase ' + ${clase.getIdClase()}" onclick="location.href='siguiente pantalla'"></button>
+		<li th:each="clase : ${class}">
+			<p>
+				<span th:text="'Clase ' + ${clase.getIdClase()}"></span>
+				<a class="button" th:href="@{/clases/{idAsignatura}/{idClase}(idClase=${clase.getIdClase()}, idAsignatura=${idAsignatura})}">Ver notas</a>
+			</p>
+		</li>
 	</ul>
 </body>
 </html>

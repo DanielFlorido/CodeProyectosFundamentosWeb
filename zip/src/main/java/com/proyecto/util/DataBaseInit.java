@@ -206,14 +206,6 @@ public class DataBaseInit implements ApplicationRunner {
         for(ListaNotas l: listaNotasRepository.findAll()){
             l.addNota(new Nota(2,(float)0.25,"parcial",l));
         }
-        System.out.println("__♥__♥_____♥__♥___ Put This");
-        System.out.println("_♥_____♥_♥_____♥__ Heart");
-        System.out.println("_♥______♥______♥__ On Your");
-        System.out.println("__♥_____/______♥__ Page If");
-        System.out.println("___♥____\\_____♥___ You Had");
-        System.out.println("____♥___/___♥_____ Your Heart");
-        System.out.println("______♥_\\_♥_______ Broken");
-        System.out.println("________♥_________. ");
     }
 
 }

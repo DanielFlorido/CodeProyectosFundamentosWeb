@@ -1,4 +1,5 @@
 package com.proyecto.model.service;
+import com.proyecto.model.entity.Clase;
 import com.proyecto.model.entity.ListaNotas;
 import com.proyecto.model.repository.ListaNotasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,9 @@ public class ListaNotasService {
     }
     public void deleteListaNotas(long id){
         listaNotasRepository.deleteById(id);
+    }
+
+    public List<ListaNotas> getListaNotasPorClase(Clase idClase){
+        return listaNotasRepository.getListaNotasPorClase(idClase);
     }
 }

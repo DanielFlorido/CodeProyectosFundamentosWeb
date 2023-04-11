@@ -25,6 +25,7 @@ public class ClaseController {
             Profesor profesor = optionalProfesor.get();
             List<Clase> clasesProfesor = claseService.getClasesPorProfesor(profesor,id);
             model.addAttribute("class", clasesProfesor);
+            model.addAttribute("idAsignatura", id);
             return "clases";
         }
         return "redirect:/";

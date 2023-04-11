@@ -15,7 +15,7 @@ import lombok.Setter;
 @Table(name = "listaNotas")
 @Getter @Setter @EqualsAndHashCode
 @NoArgsConstructor @AllArgsConstructor
-public class ListaNotas {    
+public class  ListaNotas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
