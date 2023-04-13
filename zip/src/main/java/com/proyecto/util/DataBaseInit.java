@@ -204,7 +204,9 @@ public class DataBaseInit implements ApplicationRunner {
         }
         //todos sacaron 2 D:
         for(ListaNotas l: listaNotasRepository.findAll()){
-            l.addNota(new Nota(2,(float)0.25,"parcial",l));
+            l.addNota(new Nota(2,(float)0.25,"parcial 1",l));
+            l.addNota(new Nota(4,(float)0.4,"proyecto",l));
+            l.addNota(new Nota(3,(float)0.25,"parcial 2",l));
         }
     }
 

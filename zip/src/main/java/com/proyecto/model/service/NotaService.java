@@ -4,6 +4,7 @@ import com.proyecto.model.repository.NotaRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -30,6 +31,10 @@ public class NotaService {
 
     public void deleteNota(long id){
         notaRepository.deleteById(id);
+    }
+
+    public List<String> getDescripciones(int idClase){
+        return notaRepository.getDescripciones(idClase);
     }
 
 }

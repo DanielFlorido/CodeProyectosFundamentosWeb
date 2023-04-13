@@ -7,20 +7,32 @@ import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.sql.ResultSet;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface ListaNotasRepository extends CrudRepository<ListaNotas,Long> {
-    @Query("SELECT e.nombre, a.nombre as asignatura, n.descripcion, n.nota, n.porcentaje " +
-            "FROM Clase c " +
-            "INNER JOIN c.asignatura a " +
-            "INNER JOIN c.estudiantes e " +
-            "INNER JOIN c.notasClase l " +
-            "INNER JOIN l.notas n " +
-            "WHERE c.idClase = :idClase")
-    List<ListaNotas> getListaNotasPorClase(@Param("idClase") Clase idClase);
+    @Query("SELECT CONCAT(listaN.estudiante.nombre,' ',listaN.estudiante.apellido), n.nota " +
+            "FROM Nota n " +
+            "INNER JOIN ListaNotas listaN ON n.listaNotas.id = listaN.id " +
+            "INNER JOIN Clase c ON listaN.clase.id = c.id " +
+            "WHERE c.idClase = :idClase " +
+            "ORDER BY listaN.estudiante.id")
+    List<String> getListaNotasPorClase(@Param("idClase") int idClase);
+
+
+    @Query("SELECT COUNT (DISTINCT listaN.estudiante.nombre) " +
+            "FROM Nota n " +
+            "INNER JOIN ListaNotas listaN ON n.listaNotas.id = listaN.id " +
+            "INNER JOIN Clase c ON listaN.clase.id = c.id " +
+            "WHERE c.idClase = :idClase" )
+    int cantidadEstudiantes(@Param("idClase") int idClase);
+
+
 }
