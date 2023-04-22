@@ -89,8 +89,6 @@ public class NotaController {
             System.out.println(matriz);
             model.addAttribute("notas",matriz);
 
-
-
         return "notas";
     }
     
