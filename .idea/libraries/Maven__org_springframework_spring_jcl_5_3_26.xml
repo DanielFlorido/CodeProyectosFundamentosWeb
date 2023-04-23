@@ -1,5 +1,6 @@
 <component name="libraryTable">
-  <library name="Maven: org.springframework:spring-jcl:5.3.26">
+  <library name="Maven: org.springframework:spring-jcl:5.3.26" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.springframework" artifactId="spring-jcl" version="5.3.26" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.26/spring-jcl-5.3.26.jar!/" />
     </CLASSES>
