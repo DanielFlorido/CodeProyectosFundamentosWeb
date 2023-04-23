@@ -34,13 +34,21 @@ public class ProfesorController {
             Profesor profesor = profesores.get(i);
             if(profesores.get(i).getPassword().equals(password)&&profesores.get(i).getUserName().equals(username)){
                 session.setAttribute("profesor", profesor);
-                //return "redirect:/"+profesor.getNombre()+"/asignaturas";
-                return "redirect:/clasesAdmin";
+                return "redirect:/"+profesor.getNombre()+"/asignaturas";
             }
             i++;
         }
         //aqui va de front end :D y el que pasaria si no encuentra al profe
         return "no encontrado";
+    }
+
+    @GetMapping("/profesores")
+    public String verProfesores(Model model){
+        List<Profesor> profesores = profesorService.getProfesores();
+
+        model.addAttribute("profesores",profesores);
+
+        return "profesores";
     }
 
 
