@@ -31,5 +31,6 @@ public class Asignatura {
         this.nombre = nombre;
         this.numCreditos = numCreditos;
         this.syllabus = sylabus;
-    }    
+    }
+
 }

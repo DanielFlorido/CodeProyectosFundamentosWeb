@@ -73,4 +73,14 @@ public class ClaseController {
         // redirigir a la página de confirmación
         return "redirect:/clasesAdmin";
     }
+
+    @GetMapping("/{clase}/asignaturas")
+    public String clasesxasignaturaAdmin (@PathVariable long idAsignatura, Model model, HttpSession session){
+
+        List<Clase> clases = claseService.getClases();
+
+        model.addAttribute("clases", clases);
+
+        return "clasesxasignaturaAdmin";
+    }
 }

@@ -19,15 +19,16 @@ public class ClaseService {
         }
     }
 
-    public List<Clase> getProfesores(){
+    public List<Clase> getClases(){
         return (List<Clase>) claseRepository.findAll();
     }
+
 
     public void addClase(Clase pClase){
         claseRepository.save(pClase);
     }
 
-    public void deleteClase(long id){
+    public void deleteClases(long id){
         claseRepository.deleteById(id);
     }
 
