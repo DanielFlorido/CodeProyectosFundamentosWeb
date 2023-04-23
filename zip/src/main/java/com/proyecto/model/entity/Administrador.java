@@ -35,26 +35,15 @@ public class Administrador {
     private String nombre;
     @Column(name="apellido")
     private String apellido;
-    @OneToMany(mappedBy = "administrador")
-    @Fetch(FetchMode.JOIN)
-    private List<Profesor> profesors= new ArrayList<>();
-    @Fetch(FetchMode.JOIN)
-    @OneToMany(mappedBy = "administrador")
-    private List<Estudiante> estudiantes= new ArrayList<>();
+
+
 
     public Administrador(String userName, String password, String nombre, String apellido) {
         this.userName = userName;
         this.password = password;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.profesors= new ArrayList<>();
-        this.estudiantes= new ArrayList<>();
-    }
-    public void addProfesor(Profesor profesors){
-        this.profesors.add(profesors);
-    }
-    public void addEstudiante(Estudiante estudiantes){
-        this.estudiantes.add(estudiantes);
+
     }
 
 }
