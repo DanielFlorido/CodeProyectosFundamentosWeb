@@ -19,7 +19,7 @@ public class AdministradorController {
 
  @Autowired
     AdministradorService administradorService;
-    @PostMapping("/logInAmdmin")
+    @PostMapping("/logInAdmin")
     public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
         List<Administrador> administrador= new ArrayList<Administrador>(administradorService.getAdministrador());
         int i=0;
