@@ -24,6 +24,7 @@ public class AdministradorController {
     public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
         List<Administrador> administrador= new ArrayList<Administrador>(administradorService.getAdministrador());
         int i=0;
+
         while(i<administrador.size()){
             Administrador administrador1 = administrador.get(i);
             if(administrador.get(i).getPassword().equals(password)&&administrador.get(i).getUserName().equals(username)){
