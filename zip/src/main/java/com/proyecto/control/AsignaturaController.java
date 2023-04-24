@@ -33,7 +33,7 @@ public class AsignaturaController {
                 model.addAttribute("asignaturas", asignaturasProfesor);
                 return "asignaturas";
             }else{
-                return"redirect:/";
+                return"redirect:/exito.html";
             }
         }
         return "redirect:/";

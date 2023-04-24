@@ -74,8 +74,8 @@ public class ClaseController {
         return "redirect:/clasesAdmin";
     }
 
-    @GetMapping("/{clase}/asignaturas")
-    public String clasesxasignaturaAdmin (@PathVariable long idAsignatura, Model model, HttpSession session){
+    @GetMapping("/{clase}/asignaturas2")
+    public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
 
