@@ -44,9 +44,7 @@ public class AsignaturaController {
 
         model.addAttribute("asignaturas", asignaturas);
 
-        return "asignaturas";
+        return "listaAsignaturas";
     }
-
-
 
 }
