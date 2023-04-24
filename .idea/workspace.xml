@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Controller llenado" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="clase administrador agregada">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -138,8 +139,6 @@
       <workItem from="1682275597164" duration="2009000" />
       <workItem from="1682292067458" duration="126000" />
       <workItem from="1682292200928" duration="839000" />
-      <workItem from="1682293047409" duration="2495000" />
-      <workItem from="1682295905334" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>
@@ -204,35 +203,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682292140444</updated>
     </task>
-    <task id="LOCAL-00010" summary="clase administrador agregada">
-      <created>1682293205991</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1682293205991</updated>
-    </task>
-    <task id="LOCAL-00011" summary="clase administrador agregada">
-      <created>1682293333087</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1682293333087</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Controller llenado">
-      <created>1682296045563</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1682296045563</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Controller llenado">
-      <created>1682296169423</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1682296169423</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +251,6 @@
     <MESSAGE value="se hace getListaNotasPorClase y ademas se crea la pantalla de notas para proximamente mostrar todas las notas de una clase" />
     <MESSAGE value="metodos para agregar una clase siendo administrador" />
     <MESSAGE value="clase administrador agregada" />
-    <MESSAGE value="Controller llenado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller llenado" />
+    <option name="LAST_COMMIT_MESSAGE" value="clase administrador agregada" />
   </component>
 </project>
