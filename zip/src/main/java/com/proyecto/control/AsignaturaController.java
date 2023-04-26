@@ -46,5 +46,4 @@ public class AsignaturaController {
 
         return "listaAsignaturas";
     }
-
 }

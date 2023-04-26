@@ -3,17 +3,11 @@ package com.proyecto.util;
 import javax.transaction.Transactional;
 
 import com.proyecto.model.entity.*;
+import com.proyecto.model.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
 import org.springframework.boot.ApplicationRunner;
-import com.proyecto.model.repository.AsignaturaRepository;
-import com.proyecto.model.repository.ClaseRepository;
-import com.proyecto.model.repository.EstudianteRepository;
-import com.proyecto.model.repository.ListaNotasRepository;
-import com.proyecto.model.repository.NotaRepository;
-import com.proyecto.model.repository.ProfesorRepository;
-import com.proyecto.model.repository.SemestreRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +29,8 @@ public class DataBaseInit implements ApplicationRunner {
     SemestreRepository semestreRepository;
     @Autowired
     NotaRepository notaRepository;
-
+    @Autowired
+    AdministradorRepository administradorRepository;
     @Override @Transactional
     public void run(ApplicationArguments args) throws Exception {
         //Agregando profesores!!
@@ -208,6 +203,7 @@ public class DataBaseInit implements ApplicationRunner {
             l.addNota(new Nota(4,(float)0.4,"proyecto",l));
             l.addNota(new Nota(3,(float)0.25,"parcial 2",l));
         }
+        administradorRepository.save(new Administrador("daniel","12","Daniel","Florido"));
     }
 
 }
