@@ -1,5 +1,6 @@
 package com.proyecto.control;
 import com.proyecto.model.entity.Asignatura;
+import com.proyecto.model.entity.Clase;
 import com.proyecto.model.entity.Profesor;
 import com.proyecto.model.service.AsignaturaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +33,17 @@ public class AsignaturaController {
                 model.addAttribute("asignaturas", asignaturasProfesor);
                 return "asignaturas";
             }else{
-                return"redirect:/";
+                return"redirect:/exito.html";
             }
         }
         return "redirect:/";
+    }
+    @GetMapping("/asignaturas")
+    public String verAsignaturas(Model model){
+        List<Asignatura> asignaturas = asignaturaService.getAsignaturas();
+
+        model.addAttribute("asignaturas", asignaturas);
+
+        return "listaAsignaturas";
     }
 }

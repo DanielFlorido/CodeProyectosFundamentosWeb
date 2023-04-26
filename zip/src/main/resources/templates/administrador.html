@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+    <style>
+    body{
+        background-color: #6E8793;
+    }
+    button {
+      background-color: #4A5C77;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .botones{
+      background-color: white;
+      width: 400px;
+      margin: auto;
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+    h1, h2,P{
+      text-align: center;
+      position: relative;
+    }
+    </style>
+</head>
+<body>
+<h1 >Administrador</h1>
+<h2 >Bienvenido: </h2>
+<p th:text="${nombre}"></p>
+    <div class="botones">
+        <a href="/profesores"><button>Profesores</button></a>
+        <a href="/asignaturas"><button>Asignaturas</button></a>
+        <a href="/clases"><button>Clases</button></a>
+        <a href="/estudiantes"><button>Estudiantes</button></a>
+    </div>
+</body>
+</html>

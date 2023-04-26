@@ -1,5 +1,6 @@
 <component name="libraryTable">
-  <library name="Maven: org.tomlj:tomlj:1.0.0">
+  <library name="Maven: org.tomlj:tomlj:1.0.0" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.tomlj" artifactId="tomlj" version="1.0.0" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/tomlj/tomlj/1.0.0/tomlj-1.0.0.jar!/" />
     </CLASSES>

@@ -42,5 +42,25 @@ public class ProfesorController {
         return "no encontrado";
     }
 
+    @GetMapping("/profesores")
+    public String verProfesores(Model model){
+        List<Profesor> profesores = profesorService.getProfesores();
 
+        model.addAttribute("profesores",profesores);
+
+        return "profesores";
+    }
+    @GetMapping("/")
+    public String redireccion(){
+        return "index";
+    }
+    @PostMapping("/agregarProfesor")
+    public String agregarProfesor(@RequestParam ("username") String username, @RequestParam("password")String password, @RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
+       profesorService.addProfesor(new Profesor(username,password,nombre,apellido));
+       return "redirect:/profesores";
+    }
+    @GetMapping("/addProfesor")
+    public String redireccionProfesor(){
+        return "agregarProfesor";
+    }
 }

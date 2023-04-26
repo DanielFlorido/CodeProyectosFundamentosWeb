@@ -1,4 +1,5 @@
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/ClaseRepository.java
+/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/Administrador.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/Clase.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/NotaService.java
@@ -18,6 +19,8 @@
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/SemestreController.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/ProfesorRepository.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/Estudiante.java
+/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/AdministradorRepository.java
+/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/AdministradorService.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/NotaController.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/NotaRepository.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/ListaNotas.java
@@ -28,4 +31,5 @@
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/ListaNotasService.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/ClaseController.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/Nota.java
+/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/AdministradorController.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/EstudianteService.java

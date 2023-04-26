@@ -1,5 +1,6 @@
 <component name="libraryTable">
-  <library name="Maven: org.sonatype.plexus:plexus-build-api:0.0.7">
+  <library name="Maven: org.sonatype.plexus:plexus-build-api:0.0.7" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.sonatype.plexus" artifactId="plexus-build-api" version="0.0.7" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar!/" />
     </CLASSES>
