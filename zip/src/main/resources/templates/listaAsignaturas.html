@@ -40,7 +40,7 @@
 <h1>Lista de Asignaturas</h1>
 <ul>
     <li th:each="asignatura : ${asignaturas}">
-        <span th:text="${asignatura.getidAsignatura()}+' '+${asignatura.getNombre()}+' '+${asignatura.getCreditos()}"></span>
+        <span th:text="${asignatura.getIdAsignatura()}+' '+${asignatura.getNombre()}+' '+${asignatura.getNumCreditos()}"></span>
     </li>
 </ul>
 </body>

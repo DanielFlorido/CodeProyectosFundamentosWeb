@@ -7,7 +7,7 @@
       background-color: #6E8793;
     }
 
-    .login-container {
+    .agregarProfesorContainer{
       background-color: white;
       width: 400px;
       margin: auto;
@@ -17,6 +17,7 @@
       text-align: center;
       position: relative;
     }
+
     .logo {
       display: block;
       margin: 0 auto;
@@ -53,19 +54,27 @@
   </style>
 </head>
 <body>
-<div class="login-container">
+<div class="agregarProfesorContainer">
     <div class="logo"></div>
-    <h2></h2>
-    <form method="post" action="/logIn">
+    <h1>Ingresar Profesor Nuevo</h1>
+    <form method="post" action="/agregarProfesor">
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" placeholder="Ingresar Nombre Profesor" name="nombre" required>
+
+        <label for="aoellido"><b>Apellido</b></label>
+        <input type="text" placeholder="Ingresar Apellido Profesor" name="apellido" required>
+
         <label for="username"><b>Usuario</b></label>
         <input type="text" placeholder="Ingresar usuario" name="username" required>
 
         <label for="password"><b>Contrasenia</b></label>
         <input type="password" placeholder="Ingresar contrasenia" name="password" required>
 
+
+
         <button type="submit">Ingresar</button>
     </form>
-    <a href="/loginAdmin"><button>Ingresar como administrador</button></a>
+    <a href="/"><button>Inresar como profesor</button></a>
 </div>
 </body>
 </html>

@@ -35,7 +35,6 @@ public class Administrador {
         this.password = password;
         this.nombre = nombre;
         this.apellido = apellido;
-
     }
 
 }

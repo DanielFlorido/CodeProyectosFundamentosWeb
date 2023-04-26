@@ -19,7 +19,7 @@ public class AdministradorService {
             return null;
         }
     }
-    public List<Administrador> getAdministrador() {
+    public List<Administrador> getAdministradores() {
         return (List<Administrador>) administradorRepository.findAll();
     }
 
