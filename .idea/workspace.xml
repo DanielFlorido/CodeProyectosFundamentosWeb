@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregada la base de datos en railway">
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/administrador.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarProfesor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" afterDir="false" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregado Docker para subir a web">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AdministradorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AdministradorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AdministradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AdministradorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataBaseInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataBaseInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/listaAsignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/listaAsignaturas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/profesores.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AdministradorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Administrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AdministradorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AdministradorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AdministradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AdministradorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/listaAsignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/listaAsignaturas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +88,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
   }
@@ -245,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682299665795</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="agregado profesor y administrador">
+      <created>1682486514037</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682486514037</updated>
+    </task>
+    <task id="LOCAL-00014" summary="agregado Docker para subir a web">
+      <created>1682676663308</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682676663308</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +286,8 @@
     <MESSAGE value="clase administrador agregada" />
     <MESSAGE value="Arreglado bug sara" />
     <MESSAGE value="agregada la base de datos en railway" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregada la base de datos en railway" />
+    <MESSAGE value="agregado profesor y administrador" />
+    <MESSAGE value="agregado Docker para subir a web" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregado Docker para subir a web" />
   </component>
 </project>
