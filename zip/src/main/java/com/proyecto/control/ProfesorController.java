@@ -50,10 +50,6 @@ public class ProfesorController {
 
         return "profesores";
     }
-    @GetMapping("/")
-    public String redireccion(){
-        return "index";
-    }
     @PostMapping("/agregarProfesor")
     public String agregarProfesor(@RequestParam ("username") String username, @RequestParam("password")String password, @RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
        profesorService.addProfesor(new Profesor(username,password,nombre,apellido));
