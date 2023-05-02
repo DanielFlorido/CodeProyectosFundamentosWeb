@@ -33,4 +33,8 @@ public class Asignatura {
         this.syllabus = sylabus;
     }
 
+    public Asignatura(Long idAsignatura, int numCreditos) {
+        this.idAsignatura = idAsignatura;
+        this.numCreditos = numCreditos;
+    }
 }
