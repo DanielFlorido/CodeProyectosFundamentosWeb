@@ -20,12 +20,6 @@ public class AsignaturaController {
 
     @Autowired
     AsignaturaService asignaturaService;
-    private Long idAsignatura;
-    private int numCreditos;
-    private String nombre;
-    private String syllabus;
-    private Model model;
-    private HttpSession session;
 
     @GetMapping("/{nombreProfesor}/asignaturas")
     public String verProfesor(@PathVariable("nombreProfesor") String nombreProfesor, Model model, HttpSession session) {

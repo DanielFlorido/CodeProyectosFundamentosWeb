@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Se implemento crearAsignatura">
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/creacionAsignatura.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/verClases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se agrego boton para agregar asignatura">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Asignatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Asignatura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +269,28 @@
       <option name="project" value="LOCAL" />
       <updated>1683064692229</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Se implemento htmls y verClases">
+      <created>1683077949527</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683077949527</updated>
+    </task>
+    <task id="LOCAL-00019" summary="cambio nombre html">
+      <created>1683078210366</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683078210367</updated>
+    </task>
+    <task id="LOCAL-00020" summary="se agrego boton para agregar asignatura">
+      <created>1683079915603</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683079915603</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +343,9 @@
     <MESSAGE value="agregado profesor y administrador" />
     <MESSAGE value="agregado Docker para subir a web" />
     <MESSAGE value="Se implemento crearAsignatura" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implemento crearAsignatura" />
+    <MESSAGE value="Se implemento htmls y verClases" />
+    <MESSAGE value="cambio nombre html" />
+    <MESSAGE value="se agrego boton para agregar asignatura" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agrego boton para agregar asignatura" />
   </component>
 </project>
