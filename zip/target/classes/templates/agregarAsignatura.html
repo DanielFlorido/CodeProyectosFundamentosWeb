@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Creación de Asignatura</title>
+    <style>
+        body {
+            background-color: #6E8793;
+        }
+        css
+        Copy code
+        form {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3E8E41;
+        }
+    </style>
+</head>
+<body>
+<form id="formulario-crear-asignatura" method="post" action="/agregarAsignatura">
+    <div>
+        <label for="asignatura">Asignatura:</label>
+        <select id="idAsignatura" name="asignatura">
+            <option value="">Agregue una Asignatura</option>
+            <option th:each="asignatura : ${asignatura}" th:value="${asignatura.getId()}" th:text="${asignatura.getNombre()}+ ' ' +${asignatura.getCreditos()}+' '+{asignatura.getSyllabus()}"></option>
+        </select>
+    </div>
+
+    <button type="submit">Crear Asignatura</button>
+</form>
+</body>
+</html>
+	
