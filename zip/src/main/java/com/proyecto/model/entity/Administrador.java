@@ -19,15 +19,16 @@ import lombok.Setter;
 @NoArgsConstructor @AllArgsConstructor
 
 public class Administrador {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name="userName")
+    @Column(name = "userName")
     private String userName;
-    @Column(name= "password")
+    @Column(name = "password")
     private String password;
-    @Column(name="nombre")
+    @Column(name = "nombre")
     private String nombre;
-    @Column(name="apellido")
+    @Column(name = "apellido")
     private String apellido;
 
     public Administrador(String userName, String password, String nombre, String apellido) {
@@ -35,6 +36,6 @@ public class Administrador {
         this.password = password;
         this.nombre = nombre;
         this.apellido = apellido;
-    }
 
+    }
 }

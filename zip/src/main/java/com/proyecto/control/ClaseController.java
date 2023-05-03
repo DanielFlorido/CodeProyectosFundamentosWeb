@@ -74,7 +74,7 @@ public class ClaseController {
         return "redirect:/clasesAdmin";
     }
 
-    @GetMapping("/{clase}/asignaturas2")
+    @GetMapping("/{clase}/asignaturas")
     public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
@@ -82,5 +82,13 @@ public class ClaseController {
         model.addAttribute("clases", clases);
 
         return "clasesxasignaturaAdmin";
+    }
+    @GetMapping("/clases")
+    public String verClases(Model model) {
+        List<Clase> clases = claseService.getClases();
+
+        model.addAttribute("clases", clases);
+
+        return "listaClases";
     }
 }
