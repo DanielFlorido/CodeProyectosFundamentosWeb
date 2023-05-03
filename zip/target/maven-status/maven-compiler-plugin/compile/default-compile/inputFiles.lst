@@ -25,6 +25,7 @@
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/NotaRepository.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/entity/ListaNotas.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/ProfesorService.java
+/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/HomeController.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/service/ClaseService.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/model/repository/SemestreRepository.java
 /home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/java/com/proyecto/control/ProfesorController.java
