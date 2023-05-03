@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Estudiantes</title>
+  <style>
+    body {
+      background-color: #6E8793;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 50px auto;
+      width: 80%;
+      max-width: 800px;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid white;
+      padding: 10px 0;
+    }
+    li:last-of-type {
+      border-bottom: none;
+    }
+    span:first-child {
+      font-weight: bold;
+    }
+    button {
+      background-color: #4A5C77;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .botones{
+      width: 400px;
+      margin: auto;
+
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+<div class="botones">
+  <a href="/addEstudiantes"><button>Agregar Nuevo Estudiante</button></a>
+</div>
+<h1>Lista de Estudiante</h1>
+<ul>
+  <li th:each="estudiante : ${estudiante}">
+    <span th:text="${estudiante.getNombre()}+' '+${estudiante.getApellido()}"></span>
+  </li>
+</ul>
+</body>
+</html>
