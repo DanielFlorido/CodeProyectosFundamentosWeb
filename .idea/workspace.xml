@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregado Docker para subir a web">
-      <change afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregado Docker para subir a web" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,7 +34,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +62,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="2O3lUyk2dOP7WRhBetXDDuilPKN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -94,6 +90,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
@@ -143,6 +142,7 @@
       <workItem from="1681339646343" duration="8627000" />
       <workItem from="1682215153748" duration="1130000" />
       <workItem from="1682275597164" duration="2009000" />
+      <workItem from="1683064380369" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>
@@ -256,7 +256,49 @@
       <option name="project" value="LOCAL" />
       <updated>1682677060753</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Se implemento crearAsignatura">
+      <created>1683064692229</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683064692229</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Se implemento htmls y verClases">
+      <created>1683077949527</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683077949527</updated>
+    </task>
+    <task id="LOCAL-00019" summary="cambio nombre html">
+      <created>1683078210366</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683078210367</updated>
+    </task>
+    <task id="LOCAL-00020" summary="se agrego boton para agregar asignatura">
+      <created>1683079915603</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683079915603</updated>
+    </task>
+    <task id="LOCAL-00021" summary="arregle administradorcontroller">
+      <created>1683080966282</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1683080966283</updated>
+    </task>
+    <task id="LOCAL-00022" summary="arregle html">
+      <created>1683081557455</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683081557455</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +326,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/dev" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -308,6 +350,12 @@
     <MESSAGE value="agregada la base de datos en railway" />
     <MESSAGE value="agregado profesor y administrador" />
     <MESSAGE value="agregado Docker para subir a web" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregado Docker para subir a web" />
+    <MESSAGE value="Se implemento crearAsignatura" />
+    <MESSAGE value="Se implemento htmls y verClases" />
+    <MESSAGE value="cambio nombre html" />
+    <MESSAGE value="se agrego boton para agregar asignatura" />
+    <MESSAGE value="arregle administradorcontroller" />
+    <MESSAGE value="arregle html" />
+    <option name="LAST_COMMIT_MESSAGE" value="arregle html" />
   </component>
 </project>

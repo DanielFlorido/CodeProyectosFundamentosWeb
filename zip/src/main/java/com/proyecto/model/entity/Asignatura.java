@@ -33,4 +33,10 @@ public class Asignatura {
         this.syllabus = sylabus;
     }
 
+    public Asignatura(Long idAsignatura, int numCreditos, String nombre, String syllabus) {
+        this.idAsignatura = idAsignatura;
+        this.numCreditos = numCreditos;
+        this.nombre = nombre;
+        this.syllabus = syllabus;
+    }
 }

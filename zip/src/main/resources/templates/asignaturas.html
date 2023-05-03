@@ -1,79 +1,68 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Información del profesor</title>
-	<style>
-		body {
-			background-color: #6E8793;
-			font-family: Arial, sans-serif;
-			color: white;
-			padding: 20px;
-		}
+    <meta charset="UTF-8">
+    <title>Lista de Asignaturas</title>
+    <style>
+        body {
+            background-color: #6E8793;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid white;
+            padding: 10px 0;
+        }
+        li:last-of-type {
+            border-bottom: none;
+        }
+        span:first-child {
+            font-weight: bold;
+        }
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .botones{
+            width: 400px;
+            margin: auto;
 
-		h1 {
-			font-size: 36px;
-			margin-bottom: 30px;
-		}
-
-		h2 {
-			font-size: 24px;
-			margin-top: 50px;
-			margin-bottom: 20px;
-		}
-
-		p {
-			font-size: 18px;
-			margin-bottom: 10px;
-		}
-
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-
-		.btn {
-			display: inline-block;
-			padding: 12px 24px;
-			background-color: #3B5461;
-			color: white;
-			border-radius: 6px;
-			text-decoration: none;
-			transition: all 0.3s ease-in-out;
-			border: none;
-			cursor: pointer;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			font-weight: bold;
-			margin-top: 20px;
-			margin-right: 10px;
-		}
-
-		.btn:hover {
-			background-color: #B1BFD4;
-			color: white;
-			transform: translateY(-2px);
-			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-		}
-
-		.btn-back {
-			background-color: #8E8E8E;
-		}
-	</style>
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-<h1>Información del profesor</h1>
-<h2>Nombre completo:</h2>
-<p th:text="${nombre}"></p>
-<h2>Asignaturas que dicta:</h2>
-<div>
-	<ul>
-		<li th:each="asignatura : ${asignaturas}">
-			<p>
-				<span th:text="${asignatura.nombre} + ' - ' + ${asignatura.getIdAsignatura()}"></span>
-				<a class="btn" th:href="@{/clases/{id}(id=${asignatura.id})}">Ver clases</a>
-			</p>
-		</li>
-	</ul>
+<div class="botones">
+    <a href="/addAsignatura"><button>Agregar Nueva Asignatura</button></a>
 </div>
+<h1>Lista de Asignaturas</h1>
+<ul>
+    <li th:each="asignatura : ${asignaturas}">
+        <span th:text="${asignatura.getIdAsignatura()}+' '+${asignatura.getNumCreditos()}+' '+${asignatura.getNombre()}+' '+${asignatura.getSyllabus()}"></span>
+    </li>
+</ul>
 </body>
 </html>
