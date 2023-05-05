@@ -52,11 +52,10 @@ public class AsignaturaController {
     }
 
     @PostMapping("/agregarAsignatura")
-    public String agregarAsignatura(@RequestParam("asignatura") Long idAsignatura, @RequestParam("Numero de Creditos") int numCreditos, @RequestParam("Nombre Asignatura") String nombre,
+    public String agregarAsignatura(@RequestParam("idAsignatura") int idAsignatura, @RequestParam("numCreditos") int numCreditos, @RequestParam("nombre") String nombre,
                                     @RequestParam("syllabus") String syllabus, Model model, HttpSession session) {
         //Se crea la asignatura
-        Asignatura asignatura = new Asignatura(idAsignatura, numCreditos, nombre, syllabus);
-        asignaturaService.addAsignatura(asignatura);
+        asignaturaService.addAsignatura(new Asignatura(idAsignatura, nombre, numCreditos, syllabus));
 
         //Redirigir a la confirmacion de creacion de la asignatura
         return "redirect:/asignaturas";

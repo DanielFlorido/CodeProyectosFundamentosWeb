@@ -1,5 +1,6 @@
 package com.proyecto.model.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
@@ -17,7 +18,7 @@ public class Asignatura {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "idAsignatura")
-    private long idAsignatura;
+    private int idAsignatura;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "numCreditos")
@@ -26,17 +27,11 @@ public class Asignatura {
     private String syllabus;
     @OneToMany(mappedBy = "asignatura")
     private List<Clase> clases;
-    public Asignatura(long idAsignatura,String nombre, int numCreditos, String sylabus) {
+    public Asignatura(int idAsignatura,String nombre, int numCreditos, String sylabus) {
         this.idAsignatura=idAsignatura;
         this.nombre = nombre;
         this.numCreditos = numCreditos;
         this.syllabus = sylabus;
-    }
-
-    public Asignatura(Long idAsignatura, int numCreditos, String nombre, String syllabus) {
-        this.idAsignatura = idAsignatura;
-        this.numCreditos = numCreditos;
-        this.nombre = nombre;
-        this.syllabus = syllabus;
+        this.clases= new ArrayList<>();
     }
 }
