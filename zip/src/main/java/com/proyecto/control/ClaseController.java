@@ -46,19 +46,18 @@ public class ClaseController {
         }
         return "redirect:/";
     }
-
-    @GetMapping("/clasesAdmin")
-    public String clasesAdmin(Model model){
+    @GetMapping("/addClase")
+    public String redireccionClase(Model model){
         List<Asignatura> asignaturas = asignaturaService.getAsignaturas();
         List<Profesor> profesores = profesorService.getProfesores();
 
         model.addAttribute("asignaturas", asignaturas);
         model.addAttribute("profesores", profesores);
 
-        return "clasesAdmin";
+        return "agregarClase";
     }
 
-    @PostMapping("/clasesAdmin")
+    @PostMapping("/agregarClase")
     public String crearClase(@RequestParam("profesor") Long profesorId, @RequestParam("asignatura") Long asignaturaId, @RequestParam("idClase") int idClase, Model model) {
         // buscar el semestre usando el id del profesor
         Semestre semestre = semestreService.getSemestre(profesorId);
@@ -71,10 +70,9 @@ public class ClaseController {
         claseService.addClase(clase);
 
         // redirigir a la página de confirmación
-        return "redirect:/clasesAdmin";
+        return "redirect:/clases";
     }
-
-    @GetMapping("/{clase}/asignaturas")
+    @GetMapping("/asignaturas/{clase}")
     public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
@@ -86,9 +84,8 @@ public class ClaseController {
     @GetMapping("/clases")
     public String verClases(Model model) {
         List<Clase> clases = claseService.getClases();
-
         model.addAttribute("clases", clases);
 
-        return "listaClases";
+        return "clases";
     }
 }

@@ -42,14 +42,35 @@
     span:first-child {
       font-weight: bold;
     }
+    button {
+        background-color: #4A5C77;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .botones{
+        width: 400px;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
   </style>
 </head>
 <body>
+<div class="botones">
+    <a href="/addClase"><button>Agregar Nueva Clase</button></a>
+</div>
 <h1>Lista de Clases</h1>
 <ul>
-  <li th:each="clases : ${clases}">
-    <span th:text="${clase.getidClase()}+' '+${clase.getasignatura_id()}+' '+${clase.getsemestre_id()}"></span>
+  <li th:each="clase : ${clases}">
+    <span th:text="${clase.getIdClase()}+' '+${clase.getAsignatura().getIdAsignatura()}+' '+${clase.getAsignatura().getNombre()}+' '+${clase.getSemestre().getProfesor().getNombre()}+' '+${clase.getSemestre().getProfesor().getApellido()}"></span>
   </li>
 </ul>
+
 </body>
 </html>
