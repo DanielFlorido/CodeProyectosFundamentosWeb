@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
@@ -21,7 +22,7 @@ public class AsignaturaController {
     @Autowired
     AsignaturaService asignaturaService;
 
-    @GetMapping("/{nombreProfesor}/asignaturas")
+    @GetMapping("/asignaturas/{nombreProfesor}")
     public String verProfesor(@PathVariable("nombreProfesor") String nombreProfesor, Model model, HttpSession session) {
         // Recupera el profesor desde la sesión HTTP si existe entra, sino lo devuelve a login
         Optional<Profesor> optionalProfesor = Optional.ofNullable((Profesor) session.getAttribute("profesor"));
@@ -33,7 +34,7 @@ public class AsignaturaController {
                 // Agrega el profesor al modelo para que se puedan mostrar en la vista
                 model.addAttribute("nombre", profesor.getNombre() + " " + profesor.getApellido());
                 model.addAttribute("asignaturas", asignaturasProfesor);
-                return "asignaturas";
+                return "asignaturasProfesor";
             } else {
                 return "redirect:/exito.html";
             }
@@ -47,19 +48,18 @@ public class AsignaturaController {
 
         model.addAttribute("asignaturas", asignaturas);
 
-        return "listaAsignaturas";
+        return "asignaturas";
     }
 
-    @GetMapping("/asignatura")
-    public String agregarAsignatura(@RequestParam("asignatura") Long idAsignatura, @RequestParam("Numero de Creditos") int numCreditos, @RequestParam("Nombre Asignatura") String nombre,
+    @PostMapping("/agregarAsignatura")
+    public String agregarAsignatura(@RequestParam("idAsignatura") int idAsignatura, @RequestParam("numCreditos") int numCreditos, @RequestParam("nombre") String nombre,
                                     @RequestParam("syllabus") String syllabus, Model model, HttpSession session) {
-
-
         //Se crea la asignatura
-        Asignatura asignatura = new Asignatura(idAsignatura, numCreditos, nombre, syllabus);
-        asignaturaService.addAsignatura(asignatura);
+        asignaturaService.addAsignatura(new Asignatura(idAsignatura, nombre, numCreditos, syllabus));
 
-        //Redirigir a la confirmacion de creacion de la clase
-        return "redirect:/clasesAdmin";
+        //Redirigir a la confirmacion de creacion de la asignatura
+        return "redirect:/asignaturas";
     }
+    @GetMapping("/addAsignatura")
+    public String redireccionAsignatura(){return "agregarAsignatura";}
 }
