@@ -1,5 +1,5 @@
-com\proyecto\control\AdministradorController.class
-com\proyecto\control\HomeController.class
-com\proyecto\model\service\AdministradorService.class
-com\proyecto\model\entity\Administrador.class
-com\proyecto\model\repository\AdministradorRepository.class
+com/proyecto/control/HomeController.class
+com/proyecto/model/entity/Administrador.class
+com/proyecto/model/service/AdministradorService.class
+com/proyecto/control/AdministradorController.class
+com/proyecto/model/repository/AdministradorRepository.class
