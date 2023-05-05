@@ -34,7 +34,7 @@ public class ProfesorController {
             Profesor profesor = profesores.get(i);
             if(profesores.get(i).getPassword().equals(password)&&profesores.get(i).getUserName().equals(username)){
                 session.setAttribute("profesor", profesor);
-                return "redirect:/"+profesor.getNombre()+"/asignaturas";
+                return "redirect:/asignaturas/"+profesor.getNombre();
             }
             i++;
         }
