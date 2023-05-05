@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="fixing bugs from juan and sara .|.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Asignatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Asignatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Asignatura.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Asignatura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataBaseInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -334,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683265993798</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="agregar Asignatura funcionando">
+      <created>1683270804770</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683270804770</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +374,7 @@
     <MESSAGE value="arregle administradorcontroller" />
     <MESSAGE value="arregle html" />
     <MESSAGE value="fixing bugs from juan and sara .|." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs from juan and sara .|." />
+    <MESSAGE value="agregar Asignatura funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregar Asignatura funcionando" />
   </component>
 </project>
