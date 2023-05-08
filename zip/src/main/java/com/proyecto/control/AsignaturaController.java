@@ -62,4 +62,12 @@ public class AsignaturaController {
     }
     @GetMapping("/addAsignatura")
     public String redireccionAsignatura(){return "agregarAsignatura";}
+
+    @PostMapping("/eliminarAsignatura")
+    public String eliminarAsignatura(@RequestParam("idAsignatura") int idAsignatura, @RequestParam("numCreditos") int numCreditos, @RequestParam("nombre") String nombre){
+        asignaturaService.deleteAsignatura(idAsignatura);
+        return "redirect:/asignaturas";
+    }
+    @GetMapping("/deleteAsignatura")
+    public String redureccionAsignatura(){return "eliminarAsignatura";}
 }

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando">
+      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/eliminarAsignatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +40,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,7 +112,7 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -144,6 +150,7 @@
       <workItem from="1682215153748" duration="1130000" />
       <workItem from="1682275597164" duration="2009000" />
       <workItem from="1683064380369" duration="326000" />
+      <workItem from="1683585401167" duration="3706000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Log in</title>
+    <style>
+        body {
+            background-color: #6E8793;
+        }
+
+        .eliminarAsignaturaContainer{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/600px-Javeriana.svg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #5D5F62;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #647395;
+        }
+    </style>
+</head>
+<body>
+<div class="eliminarAsignaturaContainer">
+    <div class="logo"></div>
+    <h1>Eliminar Asignatura </h1>
+    <form method="post" action="/eliminarAsignatura">
+        <label for="idAsignatura"><b>ID Asignatura</b></label>
+        <input type="text" placeholder="Ingresar ID Asignatura" name="idAsignatura" required>
+
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" placeholder="Ingresar Nombre Asignatura" name="nombre" required>
+
+        <label for="numCreditos"><b>Numero de Creditos</b></label>
+        <input type="text" placeholder="Ingresar numero de creditos" name="numCreditos" required>
+
+
+
+        <button type="submit">Eliminar</button>
+    </form>
+
+</div>
+</body>
+</html>
