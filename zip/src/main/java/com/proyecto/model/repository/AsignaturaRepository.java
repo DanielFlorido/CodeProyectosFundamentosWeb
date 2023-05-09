@@ -11,7 +11,7 @@ import com.proyecto.model.entity.Asignatura;
 import java.util.List;
 
 @Repository
-public interface AsignaturaRepository extends CrudRepository<Asignatura,Long>{
+public interface  AsignaturaRepository extends CrudRepository<Asignatura,Long>{
     @Query("SELECT DISTINCT a FROM Asignatura a " +
             "JOIN a.clases c " +
             "JOIN c.semestre s " +

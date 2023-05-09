@@ -41,4 +41,5 @@ public class AsignaturaService {
     public List<Asignatura> getAsignaturasPorProfesor(Profesor profesor){
         return asignaturaRepository.getAsignaturasPorProfesor(profesor);
     }
+
 }
