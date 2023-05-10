@@ -52,6 +52,41 @@
       text-align: center;
       position: relative;
     }
+    body {
+            background-color: #6E8793;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+    .tabla {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .tabla th, .tabla td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .tabla th {
+            background-color: #BFBFBF;
+            color: white;
+        }
+
+        .tabla tr.impar td {
+            background-color: #f2f2f2;
+        }
+
+        .tabla tr:hover td {
+            background-color: #ddd;
+        }
+        .boton:hover {
+            background-color: #BFBFBF;
+        }
   </style>
 </head>
 <body>
@@ -59,10 +94,28 @@
   <a href="/addEstudiante"><button>Agregar Nuevo Estudiante</button></a>
 </div>
 <h1>Lista de Estudiante</h1>
-<ul>
-  <li th:each="estudiante : ${estudiante}">
-    <span th:text="${estudiante.getNombre()}+' '+${estudiante.getApellido()}"></span>
-  </li>
-</ul>
+<div class="contenerdoTabla">
+  <table class="tabla">
+    <thead>
+      <tr >
+        <th>Id Estudiante</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="estudiante: ${estudiantes}">
+        <td th:text="${estudiante.getId()}"></td>
+        <td th:text="${estudiante.getNombre()}"></td>
+        <td th:text="${estudiante.getApellido()}"></td>
+        <td>
+          <a th:href="@{/estudiantes/eliminarEstudiante/{idEstudiante}(idEstudiante=${estudiante.id})}"><button>Eliminar</button></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 </body>
 </html>

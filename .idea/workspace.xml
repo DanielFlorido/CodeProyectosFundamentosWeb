@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clasesAdmin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/listaAsignaturas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/notas.html" beforeDir="false" />
-    </list>
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="act" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +34,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,11 +106,8 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.loginAdmin.html">
+  <component name="RunManager">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="loginAdmin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CodeProyectosFundamentosWebb/zip/src/main/resources/templates/loginAdmin.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -130,11 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.loginAdmin.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -352,7 +334,42 @@
       <option name="project" value="LOCAL" />
       <updated>1683271468666</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="arreglado lista de estudiantes">
+      <created>1683680527080</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683680527080</updated>
+    </task>
+    <task id="LOCAL-00029" summary="arreglado lista profesores">
+      <created>1683690783454</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683690783455</updated>
+    </task>
+    <task id="LOCAL-00030" summary="arreglado lista asignaturas">
+      <created>1683691521029</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1683691521029</updated>
+    </task>
+    <task id="LOCAL-00031" summary="arreglado lista clases">
+      <created>1683692556321</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1683692556321</updated>
+    </task>
+    <task id="LOCAL-00032" summary="act">
+      <created>1683693683303</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1683693683303</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +417,11 @@
     <MESSAGE value="arregle html" />
     <MESSAGE value="fixing bugs from juan and sara .|." />
     <MESSAGE value="agregar Asignatura funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregar Asignatura funcionando" />
+    <MESSAGE value="arreglado lista de estudiantes" />
+    <MESSAGE value="arreglado lista profesores" />
+    <MESSAGE value="arreglado lista asignaturas" />
+    <MESSAGE value="arreglado lista clases" />
+    <MESSAGE value="act" />
+    <option name="LAST_COMMIT_MESSAGE" value="act" />
   </component>
 </project>

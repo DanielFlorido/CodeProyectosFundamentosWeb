@@ -28,7 +28,7 @@ public class ClaseService {
         claseRepository.save(pClase);
     }
 
-    public void deleteClases(long id){
+    public void deleteClase(long id){
         claseRepository.deleteById(id);
     }
 

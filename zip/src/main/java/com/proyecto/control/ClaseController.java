@@ -72,7 +72,7 @@ public class ClaseController {
         // redirigir a la página de confirmación
         return "redirect:/clases";
     }
-    @GetMapping("/asignaturas/{clase}")
+    @GetMapping("/asignaturas/{clase}/AquivaAlgomas")
     public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
@@ -85,7 +85,11 @@ public class ClaseController {
     public String verClases(Model model) {
         List<Clase> clases = claseService.getClases();
         model.addAttribute("clases", clases);
-
         return "clases";
+    }
+    @GetMapping("/clases/eliminarClase/{idClase}")
+    public String eliminarClase(@PathVariable("idClase")Long idClase){
+        claseService.deleteClase(idClase);
+        return "redirect: /clases";
     }
 }
