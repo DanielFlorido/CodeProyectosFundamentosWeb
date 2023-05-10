@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="arreglado lista clases">
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/notasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/notasProfesor.html" afterDir="false" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AdministradorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clasesAdmin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/listaAsignaturas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/notas.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

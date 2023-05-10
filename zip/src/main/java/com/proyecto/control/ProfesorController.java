@@ -28,7 +28,7 @@ public class ProfesorController {
 
 
     @PostMapping("/logIn")
-    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
+    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session,Model model){
         List<Profesor> profesores = new ArrayList<Profesor>(profesorService.getProfesores());
         int i=0;
         while(i<profesores.size()){
@@ -40,7 +40,8 @@ public class ProfesorController {
             i++;
         }
         //aqui va de front end :D y el que pasaria si no encuentra al profe
-        return "no encontrado";
+        model.addAttribute("error","Usuario o contraseña incorrectos");
+        return "index";
     }
 
     @GetMapping("/profesores")

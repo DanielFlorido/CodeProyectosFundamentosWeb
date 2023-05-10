@@ -50,6 +50,22 @@
     button:hover {
       background-color: #647395;
     }
+
+    .error-message {
+        background-color: #FFEBE6;
+        border: 2px solid #E55C3D;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .error-message p {
+        color: #E55C3D;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -64,6 +80,9 @@
         <input type="password" placeholder="Ingresar contrasenia" name="password" required>
 
         <button type="submit">Ingresar</button>
+        <div th:if="${error}" class="error-message">
+            <p th:text="${error}"></p>
+        </div>
     </form>
     <a href="/loginAdmin"><button>Ingresar como administrador</button></a>
 </div>
