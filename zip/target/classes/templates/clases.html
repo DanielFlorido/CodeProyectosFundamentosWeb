@@ -125,11 +125,5 @@
         </tbody>
     </table>
 </div>
-<ul>
-  <li th:each="clase : ${clases}">
-    <span th:text="${clase.getIdClase()}+' '+${clase.getAsignatura().getIdAsignatura()}+' '+${clase.getAsignatura().getNombre()}+' '+${clase.getSemestre().getProfesor().getNombre()}+' '+${clase.getSemestre().getProfesor().getApellido()}"></span>
-  </li>
-</ul>
-
 </body>
 </html>
