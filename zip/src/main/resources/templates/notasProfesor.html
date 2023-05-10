@@ -71,7 +71,7 @@
         </thead>
         <tbody>
         <tr th:each="fila, filaStat : ${notas.subList(1, notas.size())}" th:class="${filaStat.odd} ? 'impar' : 'par'">
-            <td th:each="dato : ${fila}" th:text="${dato}"></td>
+            <td th:each="dat0o : ${fila}" th:text="${dato}"></td>
             <td>
                 <a th:href="@{${'/ruta/' + filaStat.index}}" class="boton">Botón</a>
             </td>
