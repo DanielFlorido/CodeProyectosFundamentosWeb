@@ -60,7 +60,7 @@
 </div>
 <h1>Lista de Estudiante</h1>
 <ul>
-  <li th:each="estudiante : ${estudiante}">
+  <li th:each="estudiante : ${estudiantes}">
     <span th:text="${estudiante.getNombre()}+' '+${estudiante.getApellido()}"></span>
   </li>
 </ul>

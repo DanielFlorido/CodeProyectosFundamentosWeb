@@ -30,6 +30,7 @@ public class Estudiante {
     public Estudiante(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.clases= new ArrayList<>();
     }
     
 }
