@@ -59,6 +59,41 @@
         text-align: center;
         position: relative;
     }
+    body {
+            background-color: #6E8793;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+    .tabla {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .tabla th, .tabla td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .tabla th {
+            background-color: #BFBFBF;
+            color: white;
+        }
+
+        .tabla tr.impar td {
+            background-color: #f2f2f2;
+        }
+
+        .tabla tr:hover td {
+            background-color: #ddd;
+        }
+        .boton:hover {
+            background-color: #BFBFBF;
+        }
   </style>
 </head>
 <body>
@@ -66,6 +101,30 @@
     <a href="/addClase"><button>Agregar Nueva Clase</button></a>
 </div>
 <h1>Lista de Clases</h1>
+<div class="contenerdoTabla">
+    <table class="tabla">
+        <thead>
+        <tr >
+            <th>Id clase</th>
+            <th>Nombre Clase</th>
+            <th>Nombre Profesor</th>
+            <th>Numero Creditos</th>
+            <th>Eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="clase: ${clases}">
+            <td th:text="${clase.getIdClase()}"></td>
+            <td th:text="${clase.getAsignatura().getNombre()}"></td>
+            <td th:text="${clase.getSemestre().getProfesor().getNombre()}"></td>
+            <td th:text="${clase.getAsignatura().getNumCreditos()}"></td>
+            <td>
+                <a th:href="@{/clases/eliminarClase/{idClase}(idClase=${clase.id})}"><button>Eliminar</button></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 <ul>
   <li th:each="clase : ${clases}">
     <span th:text="${clase.getIdClase()}+' '+${clase.getAsignatura().getIdAsignatura()}+' '+${clase.getAsignatura().getNombre()}+' '+${clase.getSemestre().getProfesor().getNombre()}+' '+${clase.getSemestre().getProfesor().getApellido()}"></span>
