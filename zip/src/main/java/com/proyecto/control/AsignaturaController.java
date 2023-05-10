@@ -62,4 +62,11 @@ public class AsignaturaController {
     }
     @GetMapping("/addAsignatura")
     public String redireccionAsignatura(){return "agregarAsignatura";}
+    @GetMapping("/asignaturas/eliminarAsignatura/{idAsignatura}")
+    public String eliminarAsignatura(@PathVariable("idAsignatura") Long idAsignatura){
+        asignaturaService.deleteAsignatura(idAsignatura);
+        return "redirect:/asignaturas";
+    }
 }
+
+
