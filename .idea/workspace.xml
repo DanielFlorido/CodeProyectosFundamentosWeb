@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Arreglar clases html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarClase.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarClase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/asignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/asignaturas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/asignaturasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/asignaturasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clases.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/clases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clasesProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/clasesProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/notasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/notasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +125,7 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -320,21 +339,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683265993798</updated>
     </task>
-    <task id="LOCAL-00026" summary="agregar Asignatura funcionando">
-      <created>1683270804770</created>
+    <task id="LOCAL-00026" summary="Agregar backgrounds">
+      <created>1683864227878</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1683270804770</updated>
+      <updated>1683864227878</updated>
     </task>
-    <task id="LOCAL-00027" summary="agregar Asignatura funcionando">
-      <created>1683271468666</created>
+    <task id="LOCAL-00027" summary="Agregar backgrounds">
+      <created>1683865213068</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1683271468666</updated>
+      <updated>1683865213068</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Arreglar clases html">
+      <created>1683865269022</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683865269022</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Arreglar clases html">
+      <created>1683865550414</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683865550414</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +414,8 @@
     <MESSAGE value="arregle administradorcontroller" />
     <MESSAGE value="arregle html" />
     <MESSAGE value="fixing bugs from juan and sara .|." />
-    <MESSAGE value="agregar Asignatura funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregar Asignatura funcionando" />
+    <MESSAGE value="Agregar backgrounds" />
+    <MESSAGE value="Arreglar clases html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglar clases html" />
   </component>
 </project>
