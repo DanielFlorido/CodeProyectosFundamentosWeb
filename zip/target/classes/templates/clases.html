@@ -59,12 +59,11 @@
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
-
-        .tabla th,
         .tabla td {
             padding: 10px;
             text-align: center;
             border: 1px solid #ddd;
+            color: black; /* Cambio de color del texto a negro */
         }
 
         .tabla th {
@@ -105,6 +104,7 @@
     <a href="/addClase"><button>Agregar Nueva Clase</button></a>
 </div>
 <h1>Lista de Clases</h1>
+
 <div class="contenedorTabla">
     <table class="tabla">
         <thead>
@@ -117,6 +117,7 @@
         </tr>
         </thead>
         <tbody>
+
         <tr th:each="clase: ${clases}">
             <td th:text="${clase.getIdClase()}"></td>
             <td th:text="${clase.getAsignatura().getNombre()}"></td>
@@ -127,7 +128,6 @@
             </td>
         </tr>
         </tbody>
-
     </table>
 </div>
 </body>
