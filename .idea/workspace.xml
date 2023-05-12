@@ -160,7 +160,7 @@
       <workItem from="1683667411538" duration="21000" />
       <workItem from="1683667440950" duration="15784000" />
       <workItem from="1683754411710" duration="5931000" />
-      <workItem from="1683840660657" duration="5950000" />
+      <workItem from="1683840660657" duration="6368000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>
@@ -365,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683850464244</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Eliminar estudiante desde administrador">
+      <created>1683850663764</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1683850663764</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
