@@ -4,44 +4,75 @@
     <meta charset="UTF-8">
     <title>Administrador</title>
     <style>
-    body{
-        background-color: #6E8793;
-    }
-    button {
-      background-color: #4A5C77;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      width: 100%;
-    }
-    .botones{
-      background-color: white;
-      width: 400px;
-      margin: auto;
-      margin-top: 50px;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-      position: relative;
-    }
-    h1, h2,P{
-      text-align: center;
-      position: relative;
-    }
+        body {
+            background-color: #6E8793;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.corporatefinanceinstitute.com/assets/database-1024x703.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .botones {
+            background-color: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .botones h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1;
+            color: #333333;
+        }
+
+        .botones h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1;
+            color: #333333;
+        }
+
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<h1 >Administrador</h1>
-<h2 >Bienvenido: </h2>
-<p th:text="${nombre}"></p>
-    <div class="botones">
-        <a href="/profesores"><button>Profesores</button></a>
-        <a href="/asignaturas"><button>Asignaturas</button></a>
-        <a href="/clases"><button>Clases</button></a>
-        <a href="/estudiantes"><button>Estudiantes</button></a>
-    </div>
+<div class="background-overlay"></div>
+<div class="botones">
+    <h2>BIENVENIDO</h2>
+    <h3>Usted ha entrado como administrador. A continuación encontrará la información que puede editar.</h3>
+    <a href="/profesores"><button>Profesores</button></a>
+    <a href="/asignaturas"><button>Asignaturas</button></a>
+    <a href="/clases"><button>Clases</button></a>
+    <a href="/estudiantes"><button>Estudiantes</button></a>
+</div>
 </body>
 </html>
