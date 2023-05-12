@@ -51,9 +51,23 @@
         button:hover {
             background-color: #647395;
         }
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.corporatefinanceinstitute.com/assets/database-1024x703.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+<div class="background-overlay"></div>
 <div class="agregarEstudianteContainer">
     <div class="logo"></div>
     <h1>Ingresar Estudiante Nuevo</h1>
