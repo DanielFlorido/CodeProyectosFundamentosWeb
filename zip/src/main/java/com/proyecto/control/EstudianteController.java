@@ -34,9 +34,30 @@ public class EstudianteController {
         estudianteService.addEstudiante(new Estudiante(nombre,apellido));
         return "redirect:/estudiantes";
     }
+@PostMapping("/eliminarEstudiante")
+    public String eliminarEstudiante(@RequestParam("estudiante") Long idEstudiante,Model model){
+        //se eliminan las notas y lista de notas que tenga el estudiante
+        estudianteService.deleteListaNotas(estudianteService.getListaNotasId(idEstudiante));
+
+        //eliminar todas las clases de este estudiante
+        Estudiante estudiante = estudianteService.getEstudiante(idEstudiante);
+        estudiante.getClases().clear();
+
+        //borrar el estudiante de la base de datos
+        estudianteService.deleteById(idEstudiante);
+
+        return "redirect:/estudiantes";
+    }
     @GetMapping("/addEstudiante")
     public String redireccionEstudiante(){
         return "agregarEstudiante";
+    }
+
+    @GetMapping("/deleteEstudiante")
+    public String redireccionEstudiante2(Model model){
+        List<Estudiante> estudiantes= estudianteService.getEstudiantes();
+        model.addAttribute("estudiantes", estudiantes);
+        return "eliminarEstudiante";
     }
 }
 

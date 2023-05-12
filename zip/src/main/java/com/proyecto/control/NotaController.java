@@ -48,8 +48,6 @@ public class NotaController {
             }
         }
 
-        System.out.println("Notas separadas: ");
-        System.out.println(NotasSeparadas);
         //llena la primear fila de la matriz
         ArrayList<ArrayList<Object>> matriz = new ArrayList<>();
         ArrayList<Object> miNuevoArrayList = new ArrayList<>();
@@ -86,12 +84,11 @@ public class NotaController {
             }
             matriz.add(aux);
         }
-            System.out.println(matriz);
             model.addAttribute("notas",matriz);
 
 
 
-        return "notas";
+        return "notasProfesor";
     }
     
 }

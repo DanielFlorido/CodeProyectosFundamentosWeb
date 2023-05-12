@@ -56,11 +56,12 @@
 </head>
 <body>
 <div class="botones">
-  <a href="/addEstudiante"><button>Agregar Nuevo Estudiante</button></a>
+  <a href="/addEstudiante"><button>Agregar nuevo estudiante</button></a>
+  <a href="/deleteEstudiante"><button>Eliminar un estudiante</button></a>
 </div>
 <h1>Lista de Estudiante</h1>
 <ul>
-  <li th:each="estudiante : ${estudiante}">
+  <li th:each="estudiante : ${estudiantes}">
     <span th:text="${estudiante.getNombre()}+' '+${estudiante.getApellido()}"></span>
   </li>
 </ul>

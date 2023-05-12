@@ -22,7 +22,7 @@ public class Estudiante {
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
-    @ManyToMany(cascade = CascadeType.ALL)
+   @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "estudiante_clase",
             joinColumns = @JoinColumn(name = "estudiante_id"),
             inverseJoinColumns = @JoinColumn(name = "clase_id"))

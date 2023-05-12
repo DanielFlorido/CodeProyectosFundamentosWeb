@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregar Asignatura funcionando">
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="inicio de sesion incorrecto">
+      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/eliminarEstudiante.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clasesAdmin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/listaAsignaturas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/notas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Clase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ClaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ClaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ClaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ClaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataSourceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataSourceBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ClaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ClaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Clase.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Clase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataSourceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataSourceBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +89,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2O3lUyk2dOP7WRhBetXDDuilPKN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -93,7 +112,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/danhy3421/Documentos/inge/CodeProyectoFundamentos-main/CodeProyectosFundamentosWeb/zip/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juan/Desktop/CodeProyectosFundamentosWebb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -116,7 +135,7 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.loginAdmin.html">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -162,6 +181,12 @@
       <workItem from="1682215153748" duration="1130000" />
       <workItem from="1682275597164" duration="2009000" />
       <workItem from="1683064380369" duration="326000" />
+      <workItem from="1683582230428" duration="37000" />
+      <workItem from="1683582275862" duration="25000" />
+      <workItem from="1683667411538" duration="21000" />
+      <workItem from="1683667440950" duration="15784000" />
+      <workItem from="1683754411710" duration="5931000" />
+      <workItem from="1683840660657" duration="5521000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>
@@ -352,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683271468666</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="inicio de sesion incorrecto">
+      <created>1683580519070</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683580519070</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +432,7 @@
     <MESSAGE value="arregle html" />
     <MESSAGE value="fixing bugs from juan and sara .|." />
     <MESSAGE value="agregar Asignatura funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregar Asignatura funcionando" />
+    <MESSAGE value="inicio de sesion incorrecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio de sesion incorrecto" />
   </component>
 </project>

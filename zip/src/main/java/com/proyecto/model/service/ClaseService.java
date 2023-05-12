@@ -35,4 +35,5 @@ public class ClaseService {
     public List<Clase> getClasesPorProfesor(Profesor profesor,long id){
         return claseRepository.getClasePorProfesor(profesor,id);
     }
+
 }

@@ -16,11 +16,11 @@ import java.util.List;
 @Repository
 public interface ClaseRepository extends CrudRepository<Clase,Long> {
 
-    //no lo he probado
     @Query("SELECT c FROM Clase c " +
             "JOIN c.asignatura a " +
             "JOIN c.semestre s " +
             "WHERE s.profesor = :profesor " +
             "AND a.id = :asignatur ")
     List<Clase> getClasePorProfesor(@Param("profesor") Profesor profesor,@Param("asignatur") long id);
+
 }

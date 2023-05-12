@@ -42,7 +42,7 @@ public class ClaseController {
             List<Clase> clasesProfesor = claseService.getClasesPorProfesor(profesor,id);
             model.addAttribute("class", clasesProfesor);
             model.addAttribute("idAsignatura", id);
-            return "clases";
+            return "clasesProfesor";
         }
         return "redirect:/";
     }
@@ -72,8 +72,8 @@ public class ClaseController {
         // redirigir a la página de confirmación
         return "redirect:/clases";
     }
-    @GetMapping("/asignaturas/{clase}")
-    public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
+    @GetMapping("/asignaturas/clases")
+    public String clasesxasignaturaAdmin (Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
 

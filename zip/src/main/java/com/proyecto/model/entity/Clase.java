@@ -10,6 +10,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Table(name = "clase")
@@ -29,6 +31,7 @@ public class Clase {
     private List<Estudiante> estudiantes=new ArrayList<>();
     @OneToMany(mappedBy = "clase", cascade = CascadeType.ALL)
     private List<ListaNotas> notasClase= new ArrayList<>();
+
     public Clase(Semestre semestre, Asignatura asignatura,int idClase) {
         this.semestre = semestre;
         this.asignatura=asignatura;
