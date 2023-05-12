@@ -2,11 +2,13 @@ package com.proyecto.control;
 
 import com.proyecto.model.entity.Asignatura;
 import com.proyecto.model.entity.Profesor;
+import com.proyecto.model.entity.Semestre;
 import com.proyecto.model.service.ProfesorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -60,4 +62,20 @@ public class ProfesorController {
     public String redireccionProfesor(){
         return "agregarProfesor";
     }
+    @GetMapping("/profesores/eliminarProfesor/{idProfesor}")
+    public String eliminarProfesor(@PathVariable("idProfesor") Long idProfesor){
+        //Se obtiene la lista de semestres del profesor a eliminar
+        List<Semestre> semestres = profesorService.getProfesor(idProfesor).getSemestres();
+
+        //Se asigna nulo a todos los semestres de ese profesor
+        for(int i=0;i<semestres.size();i++){
+            semestres.get(i).setProfesor(null);
+        }
+
+        //se elimina el profesor de la base de datos
+        profesorService.deleteProfesor(idProfesor);
+
+        return "redirect: /profesores";
+    }
 }
+

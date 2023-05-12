@@ -4,7 +4,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Eliminar estudiante desde administrador" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Arreglar clases html">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeProyectosFundamentosWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeProyectosFundamentosWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/zip/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/zip/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/zip/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zip/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ClaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/ProfesorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Clase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AdministradorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AdministradorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ClaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ClaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AdministradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AdministradorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ClaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/ClaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/static/exito.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/static/exito.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarAsignatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarAsignatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarClase.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarClase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarEstudiante.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/clases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/clasesProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/clasesProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/eliminarEstudiante.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/loginAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/notasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/notasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/profesores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/test/java/com/proyecto/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/test/java/com/proyecto/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ClaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ClaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/ProfesorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Clase.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Clase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/Estudiante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/ClaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/ClaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/static/exito.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/static/exito.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarAsignatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarClase.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarClase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarEstudiante.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/agregarProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/asignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/asignaturas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/asignaturasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/asignaturasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clases.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/clases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/clasesProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/clasesProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/loginAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/notasProfesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/notasProfesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/profesores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/surefire-reports/TEST-com.proyecto.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/surefire-reports/TEST-com.proyecto.ApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/surefire-reports/com.proyecto.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/surefire-reports/com.proyecto.ApplicationTests.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +116,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +168,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/juan/Desktop/CodeProyectosFundamentosWebb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juan/Desktop/aaa&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -109,11 +191,8 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="loginAdmin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CodeProyectosFundamentosWebb/zip/src/main/resources/templates/loginAdmin.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -125,7 +204,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.loginAdmin.html" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -155,12 +234,8 @@
       <workItem from="1682215153748" duration="1130000" />
       <workItem from="1682275597164" duration="2009000" />
       <workItem from="1683064380369" duration="326000" />
-      <workItem from="1683582230428" duration="37000" />
-      <workItem from="1683582275862" duration="25000" />
-      <workItem from="1683667411538" duration="21000" />
-      <workItem from="1683667440950" duration="15784000" />
-      <workItem from="1683754411710" duration="5931000" />
-      <workItem from="1683840660657" duration="6368000" />
+      <workItem from="1683924708691" duration="179000" />
+      <workItem from="1683924897766" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el metodo verProfesor en professorController">
       <created>1680824074007</created>
@@ -337,42 +412,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683265993798</updated>
     </task>
-    <task id="LOCAL-00026" summary="agregar Asignatura funcionando">
-      <created>1683270804770</created>
+    <task id="LOCAL-00026" summary="Agregar backgrounds">
+      <created>1683864227878</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1683270804770</updated>
+      <updated>1683864227878</updated>
     </task>
-    <task id="LOCAL-00027" summary="agregar Asignatura funcionando">
-      <created>1683271468666</created>
+    <task id="LOCAL-00027" summary="Agregar backgrounds">
+      <created>1683865213068</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1683271468666</updated>
+      <updated>1683865213068</updated>
     </task>
-    <task id="LOCAL-00028" summary="inicio de sesion incorrecto">
-      <created>1683580519070</created>
+    <task id="LOCAL-00028" summary="Arreglar clases html">
+      <created>1683865269022</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1683580519070</updated>
+      <updated>1683865269022</updated>
     </task>
-    <task id="LOCAL-00029" summary="Eliminar estudiante desde administrador">
-      <created>1683850464244</created>
+    <task id="LOCAL-00029" summary="Arreglar clases html">
+      <created>1683865550414</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1683850464244</updated>
+      <updated>1683865550414</updated>
     </task>
-    <task id="LOCAL-00030" summary="Eliminar estudiante desde administrador">
-      <created>1683850663764</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1683850663764</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,9 +487,8 @@
     <MESSAGE value="arregle administradorcontroller" />
     <MESSAGE value="arregle html" />
     <MESSAGE value="fixing bugs from juan and sara .|." />
-    <MESSAGE value="agregar Asignatura funcionando" />
-    <MESSAGE value="inicio de sesion incorrecto" />
-    <MESSAGE value="Eliminar estudiante desde administrador" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminar estudiante desde administrador" />
+    <MESSAGE value="Agregar backgrounds" />
+    <MESSAGE value="Arreglar clases html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglar clases html" />
   </component>
 </project>

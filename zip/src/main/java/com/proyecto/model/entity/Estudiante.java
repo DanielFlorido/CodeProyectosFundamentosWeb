@@ -22,7 +22,7 @@ public class Estudiante {
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
-   @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "estudiante_clase",
             joinColumns = @JoinColumn(name = "estudiante_id"),
             inverseJoinColumns = @JoinColumn(name = "clase_id"))
@@ -30,6 +30,7 @@ public class Estudiante {
     public Estudiante(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.clases= new ArrayList<>();
     }
     
 }

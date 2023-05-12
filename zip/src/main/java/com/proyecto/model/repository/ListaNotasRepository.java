@@ -35,6 +35,4 @@ public interface ListaNotasRepository extends CrudRepository<ListaNotas,Long> {
     int cantidadEstudiantes(@Param("idClase") int idClase);
 
 
-
-
 }
