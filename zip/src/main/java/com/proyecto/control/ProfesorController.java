@@ -62,8 +62,10 @@ public class ProfesorController {
     public String redireccionProfesor(){
         return "agregarProfesor";
     }
+  
     @GetMapping("/profesores/eliminarProfesor/{idProfesor}")
     public String eliminarProfesor(@PathVariable("idProfesor") Long idProfesor){
+
         //Se obtiene la lista de semestres del profesor a eliminar
         List<Semestre> semestres = profesorService.getProfesor(idProfesor).getSemestres();
 
@@ -74,7 +76,7 @@ public class ProfesorController {
 
         //se elimina el profesor de la base de datos
         profesorService.deleteProfesor(idProfesor);
-
+      
         return "redirect: /profesores";
     }
 }

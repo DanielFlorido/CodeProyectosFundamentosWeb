@@ -40,6 +40,7 @@ public class EstudianteController {
         estudianteService.deleteEstudiante(idEstudiante);
         return ("redirect:/estudiante");
     }
+  
     @PostMapping("/agregarEstudiante")
     public String agregarEstudiante(@RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
         estudianteService.addEstudiante(new Estudiante(nombre,apellido));
