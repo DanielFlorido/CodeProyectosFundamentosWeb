@@ -38,7 +38,7 @@ public class EstudianteController {
 
         //borrar el estudiante de la base de datos
         estudianteService.deleteEstudiante(idEstudiante);
-        return ("redirect:/estudiante");
+        return ("redirect:/estudiantes");
     }
     @PostMapping("/agregarEstudiante")
     public String agregarEstudiante(@RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){

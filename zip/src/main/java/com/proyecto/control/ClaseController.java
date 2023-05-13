@@ -87,8 +87,14 @@ public class ClaseController {
         return "clases";
     }
     @GetMapping("/clases/eliminarClase/{idClase}")
-    public String eliminarClase(@PathVariable("idClase")Long idClase){
+    public String eliminarClase(@PathVariable("idClase")Long idClase) {
+
+        //Borra las notas y lista de notas de la clase
+        claseService.deleteNotas(idClase);
+
+        //Eliminar la clase
         claseService.deleteClase(idClase);
-        return "redirect: /clases";
+
+        return "redirect:/clases";
     }
 }

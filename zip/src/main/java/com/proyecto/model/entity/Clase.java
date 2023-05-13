@@ -25,7 +25,7 @@ public class Clase {
     @ManyToOne
     @JoinColumn(name = "semestre_id")
     private Semestre semestre;
-    @ManyToMany(mappedBy = "clases")
+    @ManyToMany(mappedBy = "clases", cascade = CascadeType.ALL)
     private List<Estudiante> estudiantes=new ArrayList<>();
     @OneToMany(mappedBy = "clase", cascade = CascadeType.ALL)
     private List<ListaNotas> notasClase= new ArrayList<>();

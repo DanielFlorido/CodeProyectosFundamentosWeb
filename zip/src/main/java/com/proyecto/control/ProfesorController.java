@@ -6,6 +6,7 @@ import com.proyecto.model.entity.Semestre;
 import com.proyecto.model.service.ProfesorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -75,7 +76,26 @@ public class ProfesorController {
         //se elimina el profesor de la base de datos
         profesorService.deleteProfesor(idProfesor);
 
-        return "redirect: /profesores";
+        return "redirect:/profesores";
+    }
+
+    @GetMapping("/profesores/modificarProfesor/{idProfesor}")
+    public String redireccionarModificar(@PathVariable("idProfesor") Long idProfesor, Model model){
+
+        Profesor profesor = profesorService.getProfesor(idProfesor);
+
+        model.addAttribute("nombreProfesor",profesor.getNombre()+" "+profesor.getApellido());
+
+        return "modificarProfesor";
+    }
+
+    @Transactional
+    @PostMapping("/profesores/modificarProfesor/{idProfesor}")
+    public String modificarProfesor(@PathVariable("idProfesor") Long idProfesor,@RequestParam ("username") String username, @RequestParam("password")String password, @RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
+
+        profesorService.modificarProfesor(idProfesor,nombre,apellido,username,password);
+
+        return "redirect:/profesores";
     }
 }
 

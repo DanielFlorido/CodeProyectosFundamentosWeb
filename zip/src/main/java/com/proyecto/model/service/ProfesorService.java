@@ -30,5 +30,11 @@ public class ProfesorService {
         profesorRepository.deleteById(id);
     }
 
+    public void modificarProfesor(Long idProfesor, String nombre, String apellido, String username, String contrasena){
+
+        profesorRepository.modificarProfesor(idProfesor, nombre, apellido, username, contrasena);
+
+    }
+
 
 }

@@ -35,4 +35,9 @@ public class ClaseService {
     public List<Clase> getClasesPorProfesor(Profesor profesor,long id){
         return claseRepository.getClasePorProfesor(profesor,id);
     }
+
+    public void deleteNotas(long idClase){
+        claseRepository.deleteNotas(claseRepository.ListaNotasId(idClase));
+        claseRepository.deleteListaNotas(idClase);
+    }
 }

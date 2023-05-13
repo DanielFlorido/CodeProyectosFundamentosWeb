@@ -19,9 +19,9 @@ public class DataSourceBean {
     public DataSource getDataSource(){
         return DataSourceBuilder
                 .create()
-                .url("jdbc:mysql://containers-us-west-101.railway.app:6611/railway")
+                .url("jdbc:mysql://localhost/proyecto")
                 .username("root")
-                .password("GpOw23JDDoZlsLF98AQ2")
+                .password("")
                 .driverClassName("com.mysql.cj.jdbc.Driver")
                 .build();
     }
