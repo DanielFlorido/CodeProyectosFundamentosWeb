@@ -29,9 +29,18 @@ public class EstudianteController {
     }
     @GetMapping("/estudiantes/eliminarEstudiante/{idEstudiante}")
     public String eliminarEstudiante(@PathVariable("idEstudiante")Long idEstudiante, Model model){
+        //se eliminan las notas y lista de notas que tenga el estudiante
+        estudianteService.deleteListaNotas(estudianteService.getListaNotasId(idEstudiante));
+
+        //eliminar todas las clases de este estudiante
+        Estudiante estudiante = estudianteService.getEstudiante(idEstudiante);
+        estudiante.getClases().clear();
+
+        //borrar el estudiante de la base de datos
         estudianteService.deleteEstudiante(idEstudiante);
         return ("redirect:/estudiante");
     }
+  
     @PostMapping("/agregarEstudiante")
     public String agregarEstudiante(@RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
         estudianteService.addEstudiante(new Estudiante(nombre,apellido));

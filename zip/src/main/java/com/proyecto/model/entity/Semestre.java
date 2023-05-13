@@ -23,7 +23,7 @@ public class Semestre {
     @Column(name= "codSemestre")
     private String codSemestre;
     @ManyToOne
-    @JoinColumn(name = "profesor_id")
+    @JoinColumn(name = "profesor_id",nullable = true)
     private Profesor profesor;
     @OneToMany(mappedBy = "semestre")
     @Fetch(FetchMode.JOIN)

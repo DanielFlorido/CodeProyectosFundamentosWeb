@@ -29,4 +29,14 @@ public class EstudianteService {
     public void deleteEstudiante(long id){
         estudianteRepository.deleteById(id);
     }
+
+    public Long getListaNotasId(Long idEstudiante){
+        return estudianteRepository.getListaNotasId(idEstudiante);
+    }
+
+    public void deleteListaNotas(Long idListaNotas){
+
+        estudianteRepository.deleteNotas(idListaNotas);
+        estudianteRepository.deleteListaNotas(idListaNotas);
+    }
 }
