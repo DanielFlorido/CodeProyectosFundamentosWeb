@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se hizo eliminar Asignatura">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AsignaturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/AsignaturaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AsignaturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/AsignaturaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturas.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/asignaturas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/AsignaturaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -376,7 +371,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/juan" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
