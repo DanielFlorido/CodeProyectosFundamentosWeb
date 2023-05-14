@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se hizo eliminar Asignatura" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="se hizo eliminar Asignatura">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/AsignaturaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AsignaturaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/AsignaturaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AsignaturaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/AsignaturaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -347,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683589667841</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="se hizo eliminar Asignatura">
+      <created>1684078258224</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1684078258224</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
