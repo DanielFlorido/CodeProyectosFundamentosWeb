@@ -113,7 +113,8 @@
       <th>Id Estudiante</th>
       <th>Nombre</th>
       <th>Apellido</th>
-      <th>Opciones</th>
+      <th>Eliminar</th>
+      <th>Modificar</th>
     </tr>
     </thead>
     <tbody>
@@ -125,6 +126,9 @@
         <a th:href="@{/estudiantes/eliminarEstudiante/{idEstudiante}(idEstudiante=${estudiante.id})}">
           <button>Eliminar</button>
         </a>
+      </td>
+      <td>
+        <a th:href="@{/estudiantes/modificarEstudiante/{idEstudiante}(idEstudiante=${estudiante.id})}"><button>Modificar</button></a>
       </td>
     </tr>
     </tbody>

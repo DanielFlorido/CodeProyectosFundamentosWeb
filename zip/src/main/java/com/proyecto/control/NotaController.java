@@ -86,12 +86,11 @@ public class NotaController {
             }
             matriz.add(aux);
         }
-            System.out.println(matriz);
             model.addAttribute("notas",matriz);
 
 
 
-        return "notas";
+        return "notasProfesor";
     }
     
 }

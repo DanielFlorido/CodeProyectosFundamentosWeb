@@ -26,5 +26,12 @@ public interface EstudianteRepository extends CrudRepository<Estudiante,Long> {
     @Query("DELETE FROM ListaNotas listanota " +
             "WHERE listanota.id = :idListaNotas ")
     void deleteListaNotas(@Param("idListaNotas") Long idListaNotas);
-    
+
+    @Modifying
+    @Query("UPDATE Estudiante estudiante " +
+            "SET estudiante.nombre = :nombre, estudiante.apellido = :apellido " +
+            "WHERE estudiante.id = :idEstudiante ")
+    void modificarEstudiante(@Param("idEstudiante") Long idEstudiante, @Param("nombre") String nombre, @Param("apellido") String apellido);
+
+
 }

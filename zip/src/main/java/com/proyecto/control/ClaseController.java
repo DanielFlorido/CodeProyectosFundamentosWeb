@@ -9,6 +9,7 @@ import com.proyecto.model.service.ProfesorService;
 import com.proyecto.model.service.SemestreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -71,26 +72,25 @@ public class ClaseController {
         // redirigir a la página de confirmación
         return "redirect:/clases";
     }
-    @GetMapping("/asignaturas/{clase}/AquivaAlgomas")
-    public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
-        List<Clase> clases = claseService.getClases();
-
-        model.addAttribute("clases", clases);
-
-        return "clasesxasignaturaAdmin";
-    }
     @GetMapping("/clases")
     public String verClases(Model model) {
         List<Clase> clases = claseService.getClases();
         model.addAttribute("clases", clases);
         return "clases";
     }
+    @Transactional
     @GetMapping("/clases/eliminarClase/{idClase}")
     public String eliminarClase(@PathVariable("idClase")Long idClase) {
 
         //Borra las notas y lista de notas de la clase
         claseService.deleteNotas(idClase);
+
+        //Elimina la relacion estudiante_clases
+        for(int i=0;i<claseService.getClase(idClase).getEstudiantes().size();i++){
+            claseService.getClase(idClase).getEstudiantes().get(i).getClases().clear();
+        }
+        claseService.getClase(idClase).getEstudiantes().clear();
 
         //Eliminar la clase
         claseService.deleteClase(idClase);

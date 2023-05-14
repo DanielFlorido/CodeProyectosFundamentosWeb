@@ -1,8 +1,6 @@
 package com.proyecto.control;
 
-import com.proyecto.model.entity.Asignatura;
-import com.proyecto.model.entity.Profesor;
-import com.proyecto.model.entity.Semestre;
+import com.proyecto.model.entity.*;
 import com.proyecto.model.service.ProfesorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -97,5 +95,38 @@ public class ProfesorController {
 
         return "redirect:/profesores";
     }
+
+    @GetMapping("/profesores/cambiarProfesorClase/{idProfesor}")
+    public String redireccionarCambiarClase(@PathVariable("idProfesor") Long idProfesor, Model model) {
+
+        Profesor profesor = profesorService.getProfesor(idProfesor);
+
+        //clases del profesor
+        List<Clase> clasesProfe = profesorService.getClasesProfesor(idProfesor);
+        model.addAttribute("clasesProfe",clasesProfe);
+
+        //clases que no tengan profesor
+        List<Clase> clasesVacias = profesorService.getClasesVacias();
+        model.addAttribute("clasesVacias",clasesVacias);
+
+        model.addAttribute("nombreProfesor",profesor.getNombre()+" "+profesor.getApellido());
+
+
+
+        return "cambiarProfesorClase";
+    }
+
+    @Transactional
+    @PostMapping("/profesores/cambiarProfesorClase/{idProfesor}")
+    public String cambiarClase(@PathVariable("idProfesor") Long idProfesor,@RequestParam ("claseProfe") Long claseACambiar, @RequestParam("claseVacia") Long claseCambio){
+
+        profesorService.cambiarClase(idProfesor,claseACambiar,claseCambio);
+
+
+        return "redirect:/profesores";
+    }
+
+
+
 }
 

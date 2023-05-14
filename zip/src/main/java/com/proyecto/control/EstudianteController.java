@@ -1,9 +1,11 @@
 package com.proyecto.control;
 
 import com.proyecto.model.entity.Estudiante;
+import com.proyecto.model.entity.Profesor;
 import com.proyecto.model.service.EstudianteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -49,6 +51,25 @@ public class EstudianteController {
     @GetMapping("/addEstudiante")
     public String redireccionEstudiante(){
         return "agregarEstudiante";
+    }
+
+    @GetMapping("/estudiantes/modificarEstudiante/{idEstudiante}")
+    public String redireccionarModificar(@PathVariable("idEstudiante") Long idEstudiante, Model model){
+
+        Estudiante estudiante = estudianteService.getEstudiante(idEstudiante);
+
+        model.addAttribute("nombreEstudiante",estudiante.getNombre()+" "+estudiante.getApellido());
+
+        return "modificarEstudiante";
+    }
+
+    @Transactional
+    @PostMapping("/estudiantes/modificarEstudiante/{idEstudiante}")
+    public String modificarEstudiante(@PathVariable("idEstudiante") Long idEstudiante,@RequestParam("nombre")String nombre, @RequestParam("apellido")String apellido){
+
+        estudianteService.modificarEstudiante(idEstudiante, nombre, apellido);
+
+        return "redirect:/estudiantes";
     }
 }
 

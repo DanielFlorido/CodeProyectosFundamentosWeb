@@ -39,4 +39,9 @@ public class EstudianteService {
         estudianteRepository.deleteNotas(idListaNotas);
         estudianteRepository.deleteListaNotas(idListaNotas);
     }
+
+    public void modificarEstudiante(Long idEstudiante, String nombre, String apellido){
+
+        estudianteRepository.modificarEstudiante(idEstudiante, nombre, apellido);
+    }
 }
