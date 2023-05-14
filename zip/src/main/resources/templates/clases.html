@@ -3,74 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Clases</title>
-</head>
-<body>
+    <style>
+        body {
+            background-color: #6E8793;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid white;
+            padding: 10px 0;
+        }
+        li:last-of-type {
+            border-bottom: none;
+        }
+        span:first-child {
+            font-weight: bold;
+        }
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .botones {
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .tabla {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .tabla td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: black; /* Cambio de color del texto a negro */
+        }
 
-</body>
-</html><html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title>Lista de Clases</title>
-  <style>
-    body {
-      background-color: #6E8793;
-      color: white;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 50px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 50px auto;
-      width: 80%;
-      max-width: 800px;
-    }
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid white;
-      padding: 10px 0;
-    }
-    li:last-of-type {
-      border-bottom: none;
-    }
-    span:first-child {
-      font-weight: bold;
-    }
-    button {
-        background-color: #4A5C77;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        width: 100%;
-    }
-    .botones{
-        width: 400px;
-        margin: auto;
-        border-radius: 10px;
-        text-align: center;
-        position: relative;
-    }
-  </style>
+        .tabla th {
+            background-color: #BFBFBF;
+            color: white;
+        }
+
+        .tabla tr.impar td {
+            background-color: #f2f2f2;
+        }
+
+        .tabla tr:hover td {
+            background-color: #ddd;
+        }
+
+        .boton:hover {
+            background-color: #BFBFBF;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://observatorio.tec.mx/wp-content/uploads/2022/05/bigstock-Top-View-Of-Young-Students-Wit-204873577.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
+<div class="background-overlay"></div>
 <div class="botones">
     <a href="/addClase"><button>Agregar Nueva Clase</button></a>
 </div>
 <h1>Lista de Clases</h1>
-<ul>
-  <li th:each="clase : ${clases}">
-    <span th:text="${clase.getIdClase()}+' '+${clase.getAsignatura().getIdAsignatura()}+' '+${clase.getAsignatura().getNombre()}+' '+${clase.getSemestre().getProfesor().getNombre()}+' '+${clase.getSemestre().getProfesor().getApellido()}"></span>
-  </li>
-</ul>
 
+<div class="contenedorTabla">
+    <table class="tabla">
+        <thead>
+        <tr>
+            <th>Id clase</th>
+            <th>Nombre Clase</th>
+            <th>Nombre Profesor</th>
+            <th>Numero Creditos</th>
+            <th>Eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="clase: ${clases}">
+            <td th:text="${clase.getIdClase()}"></td>
+            <td th:text="${clase.getAsignatura().getNombre()}"></td>
+            <td th:text="${clase.getSemestre().getProfesor().getNombre()}"></td>
+            <td th:text="${clase.getAsignatura().getNumCreditos()}"></td>
+            <td>
+                <a th:href="@{/clases/eliminarClase/{idClase}(idClase=${clase.id})}"><button>Eliminar</button></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

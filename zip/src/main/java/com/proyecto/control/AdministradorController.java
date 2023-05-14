@@ -21,7 +21,7 @@ public class AdministradorController {
     @Autowired
     AdministradorService administradorService;
     @PostMapping("/logInAdmin")
-    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session){
+    public String logIn(@RequestParam("username") String username, @RequestParam ("password") String password, HttpSession session,Model model){
         List<Administrador> administrador= new ArrayList<Administrador>(administradorService.getAdministradores());
         int i=0;
         while(i<administrador.size()){
@@ -32,8 +32,8 @@ public class AdministradorController {
             }
             i++;
         }
-
-        return "no encontrado";
+        model.addAttribute("error","Usuario o contraseña incorrectos");
+        return "loginAdmin";
     }
     @GetMapping("/loginAdmin")
     public String redireccion(){

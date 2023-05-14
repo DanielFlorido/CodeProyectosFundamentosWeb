@@ -62,22 +62,11 @@ public class AsignaturaController {
     }
     @GetMapping("/addAsignatura")
     public String redireccionAsignatura(){return "agregarAsignatura";}
-
     @GetMapping("/asignaturas/eliminarAsignatura/{idAsignatura}")
     public String eliminarAsignatura(@PathVariable("idAsignatura") Long idAsignatura){
-        //Eliminar notas y listas de notas de las clases de esa asignatura
-        asignaturaService.deleteNotas(asignaturaService.getClasesId(idAsignatura),idAsignatura);
-
-
-        //borrar la lista de clases de esa asignatura
-        Asignatura asignatura = asignaturaService.getAsignatura(idAsignatura);
-        asignatura.getClases().clear();
-
-        //Eliminar las clases que tengan esa asignatura
-        asignaturaService.eliminarClaseAsignatura(idAsignatura);
-
-        //Se elimina la asignatura de la base de datos
         asignaturaService.deleteAsignatura(idAsignatura);
         return "redirect:/asignaturas";
     }
 }
+
+
