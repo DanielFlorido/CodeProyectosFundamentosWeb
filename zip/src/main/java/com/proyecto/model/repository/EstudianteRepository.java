@@ -1,5 +1,6 @@
 package com.proyecto.model.repository;
 
+import com.proyecto.model.entity.Clase;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 import com.proyecto.model.entity.Estudiante;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Repository
 public interface EstudianteRepository extends CrudRepository<Estudiante,Long> {
@@ -33,5 +36,15 @@ public interface EstudianteRepository extends CrudRepository<Estudiante,Long> {
             "WHERE estudiante.id = :idEstudiante ")
     void modificarEstudiante(@Param("idEstudiante") Long idEstudiante, @Param("nombre") String nombre, @Param("apellido") String apellido);
 
+    @Query("SELECT c " +
+            "FROM Clase c " +
+            "LEFT JOIN ListaNotas listaNotas ON c.id = listaNotas.clase.id AND listaNotas.estudiante.id = :idEstudiante " +
+            "WHERE listaNotas.estudiante.id IS NULL")
+    List<Clase> otrasClases(@Param("idEstudiante") Long idEstudiante);
+
+    @Query("SELECT c " +
+            "FROM Clase c " +
+            "WHERE c.id = :idClase")
+    Clase getClase(@Param("idClase") Long idClase);
 
 }

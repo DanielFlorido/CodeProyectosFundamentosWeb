@@ -88,8 +88,6 @@ public class NotaController {
         }
             model.addAttribute("notas",matriz);
 
-
-
         return "notasProfesor";
     }
     
