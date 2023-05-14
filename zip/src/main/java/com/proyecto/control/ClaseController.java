@@ -1,5 +1,4 @@
 package com.proyecto.control;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.proyecto.model.entity.Asignatura;
 import com.proyecto.model.entity.Clase;
 import com.proyecto.model.entity.Profesor;
@@ -34,7 +33,7 @@ public class ClaseController {
     @Autowired
     ProfesorService profesorService;
     @GetMapping("/clases/{id}")
-    public String verClases(@PathVariable long id,Model model, HttpSession session){
+    public String ClasesProfesorAsignatura(@PathVariable long id, Model model, HttpSession session){
         // Recupera el profesor desde la sesión HTTP si existe entra, sino lo devuelve a login
         Optional<Profesor> optionalProfesor= Optional.ofNullable((Profesor) session.getAttribute("profesor"));
         if(optionalProfesor.isPresent()){
@@ -42,7 +41,7 @@ public class ClaseController {
             List<Clase> clasesProfesor = claseService.getClasesPorProfesor(profesor,id);
             model.addAttribute("class", clasesProfesor);
             model.addAttribute("idAsignatura", id);
-            return "clases";
+            return "clasesProfesor";
         }
         return "redirect:/";
     }
@@ -72,7 +71,7 @@ public class ClaseController {
         // redirigir a la página de confirmación
         return "redirect:/clases";
     }
-    @GetMapping("/asignaturas/{clase}")
+    @GetMapping("/asignaturas/{clase}/AquivaAlgomas")
     public String clasesxasignaturaAdmin (@PathVariable("clase") long idAsignatura, Model model, HttpSession session){
 
         List<Clase> clases = claseService.getClases();
@@ -85,7 +84,11 @@ public class ClaseController {
     public String verClases(Model model) {
         List<Clase> clases = claseService.getClases();
         model.addAttribute("clases", clases);
-
         return "clases";
+    }
+    @GetMapping("/clases/eliminarClase/{idClase}")
+    public String eliminarClase(@PathVariable("idClase")Long idClase){
+        claseService.deleteClase(idClase);
+        return "redirect: /clases";
     }
 }

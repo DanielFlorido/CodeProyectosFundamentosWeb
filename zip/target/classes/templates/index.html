@@ -3,69 +3,124 @@
 <head>
     <title>Log in</title>
     <style>
-    body {
-      background-color: #6E8793;
-    }
+        body {
+            background-color: #6E8793;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
 
-    .login-container {
-      background-color: white;
-      width: 400px;
-      margin: auto;
-      margin-top: 50px;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-      position: relative;
-    }
-    .logo {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-      height: 200px;
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/600px-Javeriana.svg.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 2px solid #5D5F62;
-      border-radius: 25px;
-      box-sizing: border-box;
-    }
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.semana.com/resizer/6XrQehHvV-DWnCfk0QoIK_Cxxiw=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/MSYGFIPEP5ATJEYZCAACOOPPA4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
 
-    button {
-      background-color: #4A5C77;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      width: 100%;
-    }
+        .login-container {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
 
-    button:hover {
-      background-color: #647395;
-    }
-  </style>
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/600px-Javeriana.svg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #5D5F62;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #647395;
+        }
+
+        .error-message {
+            background-color: #FFEBE6;
+            border: 2px solid #E55C3D;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .error-message p {
+            color: #E55C3D;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .unofficial-site {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+    </style>
 </head>
 <body>
+<div class="background-overlay"></div>
 <div class="login-container">
     <div class="logo"></div>
+    <h1 style=" color: black;">INICIO DE SESION</h1>
     <h2></h2>
     <form method="post" action="/logIn">
-        <label for="username"><b>Usuario</b></label>
+        <label for="username" style="color: black;"><b>Usuario</b></label>
         <input type="text" placeholder="Ingresar usuario" name="username" required>
 
-        <label for="password"><b>Contrasenia</b></label>
-        <input type="password" placeholder="Ingresar contrasenia" name="password" required>
+        <label for="password" style="color: black;"><b>Contrasena</b></label>
+        <input type="password" placeholder="Ingresar contrasena" name="password" required>
 
-        <button type="submit">Ingresar</button>
+        <button type="submit">Ingresar como profesor</button>
+        <div th:if="${error}" class="error-message">
+            <p th:text="${error}"></p>
+        </div>
     </form>
     <a href="/loginAdmin"><button>Ingresar como administrador</button></a>
+</div>
+
+<div class="unofficial-site">
+    <p>Sitio no oficial</p>
 </div>
 </body>
 </html>

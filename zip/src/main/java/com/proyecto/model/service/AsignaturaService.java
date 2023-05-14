@@ -41,20 +41,4 @@ public class AsignaturaService {
     public List<Asignatura> getAsignaturasPorProfesor(Profesor profesor){
         return asignaturaRepository.getAsignaturasPorProfesor(profesor);
     }
-    public void eliminarClaseAsignatura(long id){
-        asignaturaRepository.eliminarClaseAsignatura(id);
-    }
-
-    public void deleteNotas(List<Long> idClases,long idAsignatura) {
-
-        asignaturaRepository.deleteNotas(asignaturaRepository.listaNotasId(idClases));
-        asignaturaRepository.deleteListaNotas(asignaturaRepository.getClasesId(idAsignatura));
-
-
-    }
-
-    public List<Long> getClasesId(long idAsignatura){
-        return asignaturaRepository.getClasesId(idAsignatura);
-    }
-
 }
