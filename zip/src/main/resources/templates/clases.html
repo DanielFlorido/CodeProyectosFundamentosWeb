@@ -114,6 +114,7 @@
             <th>Nombre Profesor</th>
             <th>Numero Creditos</th>
             <th>Eliminar</th>
+            <th>Modificar</th>
         </tr>
         </thead>
         <tbody>
@@ -125,6 +126,10 @@
             <td th:text="${clase.getAsignatura().getNumCreditos()}"></td>
             <td>
                 <a th:href="@{/clases/eliminarClase/{idClase}(idClase=${clase.id})}"><button>Eliminar</button></a>
+            </td>
+
+            <td>
+                <a th:href="@{/clases/modificarClase/{idClase}(idClase=${clase.id})}"><button>Modificar</button></a>
             </td>
         </tr>
         </tbody>

@@ -1,0 +1,89 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Modicar Clase</title>
+    <style>
+        body {
+            background-color: #6E8793;
+        }
+
+        .modificarClaseContainer{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/600px-Javeriana.svg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #5D5F62;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #647395;
+        }
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.corporatefinanceinstitute.com/assets/database-1024x703.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="background-overlay"></div>
+<div class="modificarClaseContainer">
+    <div class="logo"></div>
+    <h1>Modificar clase <span th:text="${nombreClase}"></span></h1>
+    <form method="post" th:action="@{/clases/modificarClase/{idClase}(idClase=${idClase})}">
+        <label for="idClase"><b>ID Clase</b></label>
+        <input type="text" placeholder="Ingresar el ID de la Clase" name="idClase" required>
+
+        <label for="idAsignatura"><b>ID Asignatura</b></label>
+        <input type="text" placeholder="Ingresar el ID de la Asignatura" name="idAsignatura" required>
+
+
+
+        <button type="submit">Modificar</button>
+    </form>
+
+</div>
+</body>
+</html> 

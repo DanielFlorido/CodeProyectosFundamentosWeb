@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
+import java.beans.Transient;
 import java.util.List;
 import java.util.Optional;
 
@@ -91,4 +93,22 @@ public class ClaseController {
         claseService.deleteClase(idClase);
         return "redirect: /clases";
     }
+    @GetMapping("/clases/modificarClase/{idProfesor}")
+    public String redireccionarModificar(@PathVariable("idClase") Long idClase, Model model){
+        Clase clase = claseService.getClase(idClase);
+
+        model.addAttribute("ID de la Clase y de la Asignatura", clase.getIdClase()+" "+clase.getAsignatura());
+
+        return "modificarClase";
+    }
+    @Transactional
+    @PostMapping("/clase/modificarClase/{idClase}")
+    public String modificarClase (@PathVariable("idClase") Long idClase, @RequestParam ("idAsignatura") long idAsignatura){
+
+        claseService.modificarClase(idClase, idAsignatura);
+
+        return "redirect:/clases";
+
+    }
+
 }
