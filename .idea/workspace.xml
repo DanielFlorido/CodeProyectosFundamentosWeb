@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="Arreglar clases html">
-      <change afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/agregarEstudianteClase.html" afterDir="false" />
+    <list default="true" id="13b5d221-fdb5-448f-a3c1-6156a87e30df" name="Changes" comment="agregados todo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/EstudianteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/control/NotaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/ListaNotas.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/entity/ListaNotas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/EstudianteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/service/EstudianteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataSourceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/util/DataSourceBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/resources/templates/estudiantes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/EstudianteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/zip/src/main/java/com/proyecto/model/repository/ListaNotasRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/control/NotaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/EstudianteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/service/EstudianteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/templates/estudiantes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/ListaNotas.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/entity/ListaNotas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/ListaNotasRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/model/repository/ListaNotasRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataSourceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/classes/com/proyecto/util/DataSourceBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/zip/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +118,7 @@
       <recent name="C:\Users\juand\OneDrive\Escritorio\proyectos intellij\CodeProyectosFundamentosWeb\zip\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -135,12 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

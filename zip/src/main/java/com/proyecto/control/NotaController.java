@@ -1,4 +1,5 @@
 package com.proyecto.control;
+import com.proyecto.model.entity.Clase;
 import com.proyecto.model.service.ClaseService;
 import com.proyecto.model.service.ListaNotasService;
 import com.proyecto.model.service.NotaService;
@@ -25,11 +26,13 @@ public class NotaController {
     @Autowired
     ListaNotasService listaNotaService;
 
+    @Autowired
+    ClaseService claseService;
 
     @GetMapping("/clases/{idAsignatura}/{idClase}")
     public String verNotasEstudiantes(@PathVariable long idAsignatura,@PathVariable int idClase, Model model, HttpSession session) throws SQLException {
         ArrayList<ArrayList<String>> tablaNotas = new ArrayList<ArrayList<String>>();
-
+        Clase clase=claseService.getClase(idClase);
         //trae la descripcion de las ntoas de la clase
         List<String> descripciones = notaService.getDescripciones(idClase);
         model.addAttribute("descripciones", descripciones);
@@ -37,7 +40,8 @@ public class NotaController {
         //trae las notas de los estudiantes
         List<String> NotasEstudiantes = listaNotaService.getListaNotasPorClase(idClase);
         //cantidad de estudiantes en la clase
-        int cantEstudiantes = listaNotaService.cantidadEstudiantes(idClase);
+
+        int cantEstudiantes = clase.getEstudiantes().size();
         //separarNotasEstudiante
         ArrayList<String> NotasSeparadas = new ArrayList<>();
         String[] a;
