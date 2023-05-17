@@ -18,19 +18,19 @@ import java.util.Map;
 
 @Repository
 public interface ListaNotasRepository extends CrudRepository<ListaNotas,Long> {
-    @Query("SELECT CONCAT(listaN.estudiante.nombre,' ',listaN.estudiante.apellido), n.nota " +
-            "FROM Nota n " +
-            "INNER JOIN ListaNotas listaN ON n.listaNotas.id = listaN.id " +
-            "INNER JOIN Clase c ON listaN.clase.id = c.id " +
-            "WHERE c.idClase = :idClase " +
-            "ORDER BY listaN.estudiante.id")
+    @Query("SELECT CONCAT(listaN.estudiante.nombre, ' ', listaN.estudiante.apellido), n.nota\n" +
+            "FROM Nota n\n" +
+            "INNER JOIN ListaNotas listaN ON n.listaNotas.id = listaN.id\n" +
+            "INNER JOIN Clase c ON listaN.clase.id = c.id\n" +
+            "WHERE c.idClase = :idClase\n" +
+            "ORDER BY CONCAT(listaN.estudiante.nombre, ' ', listaN.estudiante.apellido)\n")
     List<String> getListaNotasPorClase(@Param("idClase") int idClase);
 
 
     @Query("SELECT COUNT (DISTINCT listaN.estudiante.nombre) " +
             "FROM Nota n " +
             "INNER JOIN ListaNotas listaN ON n.listaNotas.id = listaN.id " +
-            "INNER JOIN Clase c ON listaN.clase.id = c.id " +
+            "INNER   JOIN Clase c ON listaN.clase.id = c.id " +
             "WHERE c.idClase = :idClase" )
     int cantidadEstudiantes(@Param("idClase") int idClase);
 

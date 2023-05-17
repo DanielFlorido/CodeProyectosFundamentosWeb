@@ -121,7 +121,10 @@
         <tr th:each="clase: ${clases}">
             <td th:text="${clase.getIdClase()}"></td>
             <td th:text="${clase.getAsignatura().getNombre()}"></td>
-            <td th:text="${clase.getSemestre().getProfesor().getNombre()}"></td>
+            <td>
+                <span th:if="${clase != null and clase.semestre != null and clase.semestre.profesor != null}" th:text="${clase.getSemestre().getProfesor().getNombre()}"></span>
+                <span th:unless="${clase != null and clase.semestre != null and clase.semestre.profesor != null}"></span>
+            </td>
             <td th:text="${clase.getAsignatura().getNumCreditos()}"></td>
             <td>
                 <a th:href="@{/clases/eliminarClase/{idClase}(idClase=${clase.id})}"><button>Eliminar</button></a>
