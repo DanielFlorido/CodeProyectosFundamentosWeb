@@ -2,6 +2,7 @@ package com.proyecto.model.entity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.persistence.*;
 
@@ -41,4 +42,6 @@ public class  ListaNotas {
     public void addNota(Nota nota){
         this.notas.add(nota);
     }
+
+
 }

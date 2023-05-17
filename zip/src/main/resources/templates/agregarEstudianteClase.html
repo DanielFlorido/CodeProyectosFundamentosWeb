@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Modicar Profesor</title>
+    <style>
+        body {
+            background-color: #6E8793;
+        }
+
+        .AgregarAClaseContainer{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/600px-Javeriana.svg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #5D5F62;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4A5C77;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #647395;
+        }
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.corporatefinanceinstitute.com/assets/database-1024x703.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #5D5F62;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="background-overlay"></div>
+<div class="AgregarAClaseContainer">
+    <div class="logo"></div>
+    <h1>Agregar estudiante a clase <span th:text="${nombreEstudiante}"></span></h1>
+    <form id="formulario-agregar-a-clase" method="post" th:action="@{/estudiantes/agregarEstudianteClase/{idEstudiante}(idEstudiante=${idEstudiante})}">
+        <div>
+            <label for="clase">  </label>
+            <select id="clase" name="clase" style="width: 100%;">
+                <option value="">Seleccione una clase</option>
+                <option th:each="clase : ${clases}" th:value="${clase.getId()}" th:text="${clase.getAsignatura().getNombre()}+ ' ' +${clase.getIdClase()}"></option>
+            </select>
+        </div>
+
+        <button type="submit">Agregar a clase</button>
+    </form>
+
+</div>
+</body>
+</html>

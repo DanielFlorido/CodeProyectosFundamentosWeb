@@ -117,6 +117,9 @@
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Eliminar</th>
+            <th>Modificar</th>
+            <th>Cambiar de clase</th>
+
         </tr>
         </thead>
         <tbody>
@@ -127,6 +130,13 @@
             <td>
                 <a th:href="@{/profesores/eliminarProfesor/{idProfesor}(idProfesor=${profesor.id})}"><button>Eliminar</button></a>
             </td>
+            <td>
+                <a th:href="@{/profesores/modificarProfesor/{idProfesor}(idProfesor=${profesor.id})}"><button>Modificar</button></a>
+            </td>
+            <td>
+                <a th:href="@{/profesores/cambiarProfesorClase/{idProfesor}(idProfesor=${profesor.id})}"><button>Cambiar de clase</button></a>
+            </td>
+
         </tr>
         </tbody>
     </table>
